@@ -1,0 +1,69 @@
+[
+  {
+    "model": "brief.brieftemplate",
+    "pk": 1,
+    "fields": {
+      "template_code": "TMP001",
+      "template_name": "危化品安全运行日报模板",
+      "template_type": 1,
+      "industry_type": 4,
+      "time_dimension": "day",
+      "region_dimension": "{\"include_all\": true}",
+      "industry_dimension": "{\"industries\": [4]}",
+      "template_content": "【危化品安全运行日报】\n报告日期：{report_date}\n\n一、总体情况\n- 报警次数：{alarm_count}次\n- 预警次数：{warning_count}次\n- 风险隐患数量：{risk_count}个\n\n二、行业分析\n{industry_analysis}\n\n三、区域分析\n{region_analysis}\n\n四、时间趋势\n{time_trend}\n\n五、重点关注\n{key_points}",
+      "variables": "{\"report_date\": \"报告日期\", \"alarm_count\": \"报警次数\", \"warning_count\": \"预警次数\", \"risk_count\": \"风险隐患数量\", \"industry_analysis\": \"行业分析\", \"region_analysis\": \"区域分析\", \"time_trend\": \"时间趋势\", \"key_points\": \"重点关注\"}",
+      "data_config": "{\"alarm_count\": true, \"warning_count\": true, \"risk_count\": true, \"industry_data\": true, \"region_data\": true, \"time_data\": true}",
+      "status": 1,
+      "description": "危化品行业安全运行日报模板",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "brief.brieftemplate",
+    "pk": 2,
+    "fields": {
+      "template_code": "TMP002",
+      "template_name": "防汛安全运行周报模板",
+      "template_type": 1,
+      "industry_type": 2,
+      "time_dimension": "week",
+      "region_dimension": "{\"include_all\": true}",
+      "industry_dimension": "{\"industries\": [2]}",
+      "template_content": "【防汛安全运行周报】\n报告周期：{period_start} 至 {period_end}\n\n一、总体情况\n- 报警次数：{alarm_count}次\n- 预警次数：{warning_count}次\n- 风险隐患数量：{risk_count}个\n\n二、行业分析\n{industry_analysis}\n\n三、区域分析\n{region_analysis}\n\n四、时间趋势\n{time_trend}\n\n五、下周工作重点\n{next_week_focus}",
+      "variables": "{\"period_start\": \"周期开始时间\", \"period_end\": \"周期结束时间\", \"alarm_count\": \"报警次数\", \"warning_count\": \"预警次数\", \"risk_count\": \"风险隐患数量\", \"industry_analysis\": \"行业分析\", \"region_analysis\": \"区域分析\", \"time_trend\": \"时间趋势\", \"next_week_focus\": \"下周工作重点\"}",
+      "data_config": "{\"alarm_count\": true, \"warning_count\": true, \"risk_count\": true, \"industry_data\": true, \"region_data\": true, \"time_data\": true}",
+      "status": 1,
+      "description": "防汛行业安全运行周报模板",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "brief.brieftemplate",
+    "pk": 3,
+    "fields": {
+      "template_code": "TMP003",
+      "template_name": "突发预警简报模板",
+      "template_type": 2,
+      "industry_type": null,
+      "time_dimension": null,
+      "region_dimension": "{\"include_all\": true}",
+      "industry_dimension": "{\"industries\": [1, 2, 3, 4]}",
+      "template_content": "【突发预警简报】\n预警时间：{warning_time}\n预警级别：{warning_level}\n预警类型：{warning_type}\n预警区域：{warning_region}\n\n一、预警概况\n{warning_summary}\n\n二、影响范围\n{impact_scope}\n\n三、应对措施\n{response_measures}\n\n四、后续跟踪\n{follow_up}",
+      "variables": "{\"warning_time\": \"预警时间\", \"warning_level\": \"预警级别\", \"warning_type\": \"预警类型\", \"warning_region\": \"预警区域\", \"warning_summary\": \"预警概况\", \"impact_scope\": \"影响范围\", \"response_measures\": \"应对措施\", \"follow_up\": \"后续跟踪\"}",
+      "data_config": "{\"warning_count\": true, \"warning_level_distribution\": true, \"warning_type_distribution\": true, \"region_data\": true}",
+      "status": 1,
+      "description": "非常态化突发预警简报模板",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

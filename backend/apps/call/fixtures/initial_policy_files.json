@@ -1,0 +1,75 @@
+[
+  {
+    "model": "call.policyfile",
+    "pk": 1,
+    "fields": {
+      "file_code": "POL001",
+      "file_name": "关于进一步加强危化品安全管理的通知.pdf",
+      "file_path": "/uploads/policies/POL001_关于进一步加强危化品安全管理的通知.pdf",
+      "file_size": 524288,
+      "file_type": "application/pdf",
+      "file_ext": "pdf",
+      "policy_title": "关于进一步加强危化品安全管理的通知",
+      "policy_content": "为深入贯彻落实国家安全生产法律法规，切实加强危险化学品安全管理，现就有关事项通知如下：\n一、严格落实企业主体责任...\n二、加强隐患排查治理...\n三、完善应急管理体系...",
+      "policy_requirement": "请各相关单位于15日内组织学习，并于30日内反馈落实情况",
+      "upload_user_id": 1,
+      "upload_time": "2024-01-05T08:00:00Z",
+      "publish_status": 1,
+      "publish_time": "2024-01-05T10:00:00Z",
+      "description": "关于加强危化品安全管理的政策文件",
+      "remark": null,
+      "created_at": "2024-01-05T08:00:00Z",
+      "updated_at": "2024-01-05T10:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.policyfile",
+    "pk": 2,
+    "fields": {
+      "file_code": "POL002",
+      "file_name": "防汛应急预案修订版通知.pdf",
+      "file_path": "/uploads/policies/POL002_防汛应急预案修订版通知.pdf",
+      "file_size": 786432,
+      "file_type": "application/pdf",
+      "file_ext": "pdf",
+      "policy_title": "防汛应急预案修订版通知",
+      "policy_content": "根据上级要求，现发布《防汛应急预案修订版》，请各单位认真组织学习，确保汛期应急响应及时有效。\n主要修订内容：\n一、完善预警发布机制...\n二、优化应急响应流程...",
+      "policy_requirement": "请各相关单位于7日内组织学习，并于15日内反馈学习情况",
+      "upload_user_id": 1,
+      "upload_time": "2024-01-10T08:00:00Z",
+      "publish_status": 1,
+      "publish_time": "2024-01-10T10:00:00Z",
+      "description": "关于防汛应急预案修订的政策文件",
+      "remark": null,
+      "created_at": "2024-01-10T08:00:00Z",
+      "updated_at": "2024-01-10T10:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.policyfile",
+    "pk": 3,
+    "fields": {
+      "file_code": "POL003",
+      "file_name": "应急演练工作实施方案.doc",
+      "file_path": "/uploads/policies/POL003_应急演练工作实施方案.doc",
+      "file_size": 1048576,
+      "file_type": "application/msword",
+      "file_ext": "doc",
+      "policy_title": "应急演练工作实施方案",
+      "policy_content": "为提升应急响应能力，现制定本年度应急演练工作实施方案。\n一、演练目标...\n二、演练计划...\n三、工作要求...",
+      "policy_requirement": "请各相关单位按要求制定演练计划，并于月底前上报",
+      "upload_user_id": 2,
+      "upload_time": "2024-01-12T08:00:00Z",
+      "publish_status": 0,
+      "publish_time": null,
+      "description": "应急演练工作实施方案",
+      "remark": null,
+      "created_at": "2024-01-12T08:00:00Z",
+      "updated_at": "2024-01-12T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

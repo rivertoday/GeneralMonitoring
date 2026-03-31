@@ -1,0 +1,192 @@
+[
+  {
+    "model": "plan.planflow",
+    "pk": 1,
+    "fields": {
+      "plan_id": 1,
+      "flow_code": "FLOW001",
+      "flow_name": "事故信息接报与响应启动",
+      "parent_id": 0,
+      "flow_type": 1,
+      "flow_level": 1,
+      "flow_config": "{\"nodes\": [{\"id\": \"node1\", \"name\": \"接报\", \"type\": \"start\"}, {\"id\": \"node2\", \"name\": \"信息核实\", \"type\": \"task\"}, {\"id\": \"node3\", \"name\": \"启动响应\", \"type\": \"end\"}], \"edges\": [{\"from\": \"node1\", \"to\": \"node2\"}, {\"from\": \"node2\", \"to\": \"node3\"}]}",
+      "next_flow_ids": "[2]",
+      "condition_config": "{\"condition\": \"事故确认\"}",
+      "sort_order": 1,
+      "description": "事故信息接报后，核实信息并启动应急响应",
+      "remark": null,
+      "created_at": "2024-01-03T08:00:00Z",
+      "updated_at": "2024-01-03T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planflow",
+    "pk": 2,
+    "fields": {
+      "plan_id": 1,
+      "flow_code": "FLOW002",
+      "flow_name": "现场处置与救援",
+      "parent_id": 0,
+      "flow_type": 1,
+      "flow_level": 1,
+      "flow_config": "{\"nodes\": [{\"id\": \"node1\", \"name\": \"人员疏散\", \"type\": \"task\"}, {\"id\": \"node2\", \"name\": \"泄漏控制\", \"type\": \"task\"}, {\"id\": \"node3\", \"name\": \"污染处置\", \"type\": \"task\"}], \"edges\": [{\"from\": \"node1\", \"to\": \"node2\"}, {\"from\": \"node2\", \"to\": \"node3\"}]}",
+      "next_flow_ids": "[3]",
+      "condition_config": "{\"condition\": \"现场到达\"}",
+      "sort_order": 2,
+      "description": "现场人员疏散、泄漏控制和污染处置",
+      "remark": null,
+      "created_at": "2024-01-03T08:00:00Z",
+      "updated_at": "2024-01-03T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planflow",
+    "pk": 3,
+    "fields": {
+      "plan_id": 1,
+      "flow_code": "FLOW003",
+      "flow_name": "应急结束与总结评估",
+      "parent_id": 0,
+      "flow_type": 1,
+      "flow_level": 1,
+      "flow_config": "{\"nodes\": [{\"id\": \"node1\", \"name\": \"事故评估\", \"type\": \"task\"}, {\"id\": \"node2\", \"name\": \"应急结束\", \"type\": \"end\"}], \"edges\": [{\"from\": \"node1\", \"to\": \"node2\"}]}",
+      "next_flow_ids": "[]",
+      "condition_config": "{\"condition\": \"事故处置完成\"}",
+      "sort_order": 3,
+      "description": "事故处置完成后，进行总结评估并结束应急响应",
+      "remark": null,
+      "created_at": "2024-01-03T08:00:00Z",
+      "updated_at": "2024-01-03T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planflow",
+    "pk": 4,
+    "fields": {
+      "plan_id": 1,
+      "flow_code": "FLOW002-01",
+      "flow_name": "人员疏散",
+      "parent_id": 2,
+      "flow_type": 3,
+      "flow_level": 2,
+      "flow_config": null,
+      "next_flow_ids": null,
+      "condition_config": null,
+      "sort_order": 1,
+      "description": "组织事故现场周边人员疏散至安全区域",
+      "remark": null,
+      "created_at": "2024-01-03T08:00:00Z",
+      "updated_at": "2024-01-03T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planflow",
+    "pk": 5,
+    "fields": {
+      "plan_id": 2,
+      "flow_code": "FLOW004",
+      "flow_name": "汛情监测与预警发布",
+      "parent_id": 0,
+      "flow_type": 1,
+      "flow_level": 1,
+      "flow_config": "{\"nodes\": [{\"id\": \"node1\", \"name\": \"水位监测\", \"type\": \"task\"}, {\"id\": \"node2\", \"name\": \"预警发布\", \"type\": \"task\"}], \"edges\": [{\"from\": \"node1\", \"to\": \"node2\"}]}",
+      "next_flow_ids": "[6]",
+      "condition_config": "{\"condition\": \"水位超警戒\"}",
+      "sort_order": 1,
+      "description": "监测水位变化，发布预警信息",
+      "remark": null,
+      "created_at": "2024-01-03T08:00:00Z",
+      "updated_at": "2024-01-03T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planflow",
+    "pk": 6,
+    "fields": {
+      "plan_id": 2,
+      "flow_code": "FLOW005",
+      "flow_name": "防汛抢险与人员转移",
+      "parent_id": 0,
+      "flow_type": 1,
+      "flow_level": 1,
+      "flow_config": "{\"nodes\": [{\"id\": \"node1\", \"name\": \"堤防巡查\", \"type\": \"task\"}, {\"id\": \"node2\", \"name\": \"抢险加固\", \"type\": \"task\"}, {\"id\": \"node3\", \"name\": \"人员转移\", \"type\": \"task\"}], \"edges\": [{\"from\": \"node1\", \"to\": \"node2\"}, {\"from\": \"node2\", \"to\": \"node3\"}]}",
+      "next_flow_ids": "[]",
+      "condition_config": "{\"condition\": \"汛情严重\"}",
+      "sort_order": 2,
+      "description": "加强堤防巡查，进行抢险加固，必要时转移人员",
+      "remark": null,
+      "created_at": "2024-01-03T08:00:00Z",
+      "updated_at": "2024-01-03T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planflow",
+    "pk": 7,
+    "fields": {
+      "plan_id": 3,
+      "flow_code": "FLOW006",
+      "flow_name": "事故发现与报告",
+      "parent_id": 0,
+      "flow_type": 1,
+      "flow_level": 1,
+      "flow_config": "{\"nodes\": [{\"id\": \"node1\", \"name\": \"事故发现\", \"type\": \"start\"}, {\"id\": \"node2\", \"name\": \"停止作业\", \"type\": \"task\"}, {\"id\": \"node3\", \"name\": \"事故报告\", \"type\": \"task\"}, {\"id\": \"node4\", \"name\": \"启动方案\", \"type\": \"end\"}], \"edges\": [{\"from\": \"node1\", \"to\": \"node2\"}, {\"from\": \"node2\", \"to\": \"node3\"}, {\"from\": \"node3\", \"to\": \"node4\"}]}",
+      "next_flow_ids": "[8]",
+      "condition_config": "{\"condition\": \"泄漏确认\"}",
+      "sort_order": 1,
+      "description": "发现泄漏事故后，立即停止作业并报告，启动现场处置方案",
+      "remark": null,
+      "created_at": "2024-01-09T08:00:00Z",
+      "updated_at": "2024-01-09T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planflow",
+    "pk": 8,
+    "fields": {
+      "plan_id": 3,
+      "flow_code": "FLOW007",
+      "flow_name": "现场处置与泄漏控制",
+      "parent_id": 0,
+      "flow_type": 1,
+      "flow_level": 1,
+      "flow_config": "{\"nodes\": [{\"id\": \"node1\", \"name\": \"人员疏散\", \"type\": \"task\"}, {\"id\": \"node2\", \"name\": \"泄漏源控制\", \"type\": \"task\"}, {\"id\": \"node3\", \"name\": \"污染物处置\", \"type\": \"task\"}], \"edges\": [{\"from\": \"node1\", \"to\": \"node2\"}, {\"from\": \"node2\", \"to\": \"node3\"}]}",
+      "next_flow_ids": "[9]",
+      "condition_config": "{\"condition\": \"方案启动\"}",
+      "sort_order": 2,
+      "description": "组织人员疏散，控制泄漏源，处置泄漏污染物",
+      "remark": null,
+      "created_at": "2024-01-09T08:00:00Z",
+      "updated_at": "2024-01-09T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planflow",
+    "pk": 9,
+    "fields": {
+      "plan_id": 3,
+      "flow_code": "FLOW008",
+      "flow_name": "环境监测与处置完成",
+      "parent_id": 0,
+      "flow_type": 1,
+      "flow_level": 1,
+      "flow_config": "{\"nodes\": [{\"id\": \"node1\", \"name\": \"环境监测\", \"type\": \"task\"}, {\"id\": \"node2\", \"name\": \"安全评估\", \"type\": \"task\"}, {\"id\": \"node3\", \"name\": \"处置完成\", \"type\": \"end\"}], \"edges\": [{\"from\": \"node1\", \"to\": \"node2\"}, {\"from\": \"node2\", \"to\": \"node3\"}]}",
+      "next_flow_ids": "[]",
+      "condition_config": "{\"condition\": \"泄漏控制完成\"}",
+      "sort_order": 3,
+      "description": "开展环境监测，进行安全评估，确认处置完成",
+      "remark": null,
+      "created_at": "2024-01-09T08:00:00Z",
+      "updated_at": "2024-01-09T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

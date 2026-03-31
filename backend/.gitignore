@@ -1,0 +1,140 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Django
+*.log
+*.pot
+*.pyc
+db.sqlite3
+db.sqlite3-journal
+*.db
+
+# Django 静态文件和媒体文件
+# 根据 settings.py: STATIC_ROOT = BASE_DIR / 'backend' / 'staticfiles'
+# 根据 settings.py: MEDIA_ROOT = BASE_DIR / 'backend' / 'media'
+backend/backend/staticfiles/
+backend/backend/media/
+staticfiles/
+media/
+
+# 环境变量文件（保留示例文件）
+.env
+.env.local
+.env.prod
+.env.*.local
+.venv
+
+# 虚拟环境
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+.env/
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# 操作系统
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# 日志文件
+logs/
+*.log
+backend/backend/logs/
+backend/logs/
+errors.log
+*.log.*
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# 测试和覆盖率
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.pytest_cache/
+.hypothesis/
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# 备份文件
+*.bak
+*.backup
+*.tmp
+*.temp
+
+# 压缩文件（如果不需要版本控制）
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# 本地配置文件
+local_settings.py
+local_config.py
+
+# 生产环境特定文件
+gunicorn.pid
+*.pid
+*.sock
+
+# 临时文件
+*.tmp
+*.temp
+.tmp/
+temp/
+
+

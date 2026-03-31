@@ -1,0 +1,113 @@
+[
+  {
+    "model": "risk.warningrule",
+    "pk": 1,
+    "fields": {
+      "rule_code": "RULE001",
+      "rule_name": "危化品浓度超标预警规则",
+      "rule_type": 1,
+      "industry_type": 4,
+      "warning_level_id": 1,
+      "condition_config": "{\"monitor_type\": \"浓度\", \"threshold\": 100, \"unit\": \"mg/m³\", \"duration_minutes\": 5, \"frequency\": 3}",
+      "action_config": "{\"auto_publish\": true, \"notify_orgs\": [1, 2], \"notify_users\": []}",
+      "response_time": null,
+      "handle_time": null,
+      "feedback_time": null,
+      "status": 1,
+      "description": "当危化品浓度连续5分钟超过100mg/m³，且报警频率≥3次/小时，自动生成红色I级预警",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.warningrule",
+    "pk": 2,
+    "fields": {
+      "rule_code": "RULE002",
+      "rule_name": "防汛水位预警规则",
+      "rule_type": 1,
+      "industry_type": 2,
+      "warning_level_id": 2,
+      "condition_config": "{\"monitor_type\": \"水位\", \"threshold\": 8.5, \"unit\": \"米\", \"duration_minutes\": 60, \"frequency\": 2}",
+      "action_config": "{\"auto_publish\": true, \"notify_orgs\": [1, 3], \"notify_users\": []}",
+      "response_time": null,
+      "handle_time": null,
+      "feedback_time": null,
+      "status": 1,
+      "description": "当水位超过8.5米，持续60分钟，且报警≥2次，自动生成橙色Ⅱ级预警",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.warningrule",
+    "pk": 3,
+    "fields": {
+      "rule_code": "RULE003",
+      "rule_name": "预警处置规则（红色I级）",
+      "rule_type": 2,
+      "industry_type": 4,
+      "warning_level_id": 1,
+      "condition_config": "{}",
+      "action_config": "{\"response_time\": 30, \"handle_time\": 120, \"feedback_time\": 180}",
+      "response_time": 30,
+      "handle_time": 120,
+      "feedback_time": 180,
+      "status": 1,
+      "description": "红色I级预警处置规则：30分钟内响应，2小时内处置，3小时内反馈",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.warningrule",
+    "pk": 4,
+    "fields": {
+      "rule_code": "RULE004",
+      "rule_name": "预警处置规则（橙色Ⅱ级）",
+      "rule_type": 2,
+      "industry_type": 2,
+      "warning_level_id": 2,
+      "condition_config": "{}",
+      "action_config": "{\"response_time\": 60, \"handle_time\": 240, \"feedback_time\": 360}",
+      "response_time": 60,
+      "handle_time": 240,
+      "feedback_time": 360,
+      "status": 1,
+      "description": "橙色Ⅱ级预警处置规则：60分钟内响应，4小时内处置，6小时内反馈",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.warningrule",
+    "pk": 5,
+    "fields": {
+      "rule_code": "RULE005",
+      "rule_name": "森林火灾风险预警规则",
+      "rule_type": 1,
+      "industry_type": 1,
+      "warning_level_id": 3,
+      "condition_config": "{\"monitor_type\": \"火险等级\", \"threshold\": 4, \"unit\": \"级\", \"duration_minutes\": 120, \"frequency\": 1}",
+      "action_config": "{\"auto_publish\": false, \"notify_orgs\": [1], \"notify_users\": []}",
+      "response_time": null,
+      "handle_time": null,
+      "feedback_time": null,
+      "status": 1,
+      "description": "当森林火险等级≥4级，持续120分钟，自动生成黄色Ⅲ级预警",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

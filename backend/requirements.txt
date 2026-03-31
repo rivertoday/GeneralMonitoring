@@ -1,0 +1,29 @@
+# Django核心框架
+Django==5.2.8
+djangorestframework==3.15.2
+
+# 数据库
+mysqlclient==2.2.4
+
+# 认证授权
+djangorestframework-simplejwt==5.3.1
+
+# 工具库
+python-dotenv==1.0.1
+Pillow==11.0.0
+django-filter==24.3
+
+# API文档
+drf-yasg==1.21.7
+
+# CORS跨域支持
+django-cors-headers==4.3.1
+
+# 空间数据支持
+# django-gis==0.1  # 如果需要，可以使用GeoDjango（注意：GeoDjango需要PostGIS，MySQL使用空间数据类型即可）
+
+# 工具
+pytz==2024.2
+
+# WSGI 服务器（生产环境）
+gunicorn==21.2.0

@@ -1,0 +1,11 @@
+"""
+用户权限管理模块 - App配置
+"""
+from django.apps import AppConfig
+
+
+class UsersConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'apps.users'
+    verbose_name = '用户权限管理'
+

@@ -1,0 +1,81 @@
+[
+  {
+    "model": "risk.riskhiddendanger",
+    "pk": 1,
+    "fields": {
+      "danger_code": "DNG001",
+      "danger_name": "马钢焦化厂安全防护设施不完善",
+      "monitor": 1,
+      "organization_id": 8,
+      "industry_type": 4,
+      "location": "POINT(118.488765 31.740123)",
+      "longitude": "118.488765",
+      "latitude": "31.740123",
+      "street": "解放路街道",
+      "address": "马鞍山市花山区马钢工业园区焦化厂",
+      "danger_level": 1,
+      "danger_category": "安全防护",
+      "danger_description": "焦化厂生产区域部分安全防护设施老化，紧急切断装置响应时间过长，存在安全隐患",
+      "discover_time": "2024-01-10T10:00:00Z",
+      "discover_user_id": 6,
+      "status": 1,
+      "remark": null,
+      "created_at": "2024-01-10T10:00:00Z",
+      "updated_at": "2024-01-10T10:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.riskhiddendanger",
+    "pk": 2,
+    "fields": {
+      "danger_code": "DNG002",
+      "danger_name": "中石化油库消防通道被占用",
+      "monitor": 2,
+      "organization_id": 1,
+      "industry_type": 4,
+      "location": "POINT(118.492345 31.734567)",
+      "longitude": "118.492345",
+      "latitude": "31.734567",
+      "street": "解放路街道",
+      "address": "马鞍山市花山区中石化油库",
+      "danger_level": 2,
+      "danger_category": "消防安全",
+      "danger_description": "油库储罐区消防通道被临时堆放物占用，影响应急车辆通行",
+      "discover_time": "2024-01-12T14:30:00Z",
+      "discover_user_id": 7,
+      "status": 0,
+      "remark": null,
+      "created_at": "2024-01-12T14:30:00Z",
+      "updated_at": "2024-01-12T14:30:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.riskhiddendanger",
+    "pk": 3,
+    "fields": {
+      "danger_code": "DNG003",
+      "danger_name": "液氨储罐泄漏检测系统故障",
+      "monitor": 4,
+      "organization_id": 1,
+      "industry_type": 4,
+      "location": "POINT(118.508901 31.741234)",
+      "longitude": "118.508901",
+      "latitude": "31.741234",
+      "street": "平湖街道",
+      "address": "马鞍山市雨山区化工路200号",
+      "danger_level": 1,
+      "danger_category": "设备故障",
+      "danger_description": "液氨储罐区泄漏检测系统部分传感器故障，无法实时监测氨气泄漏",
+      "discover_time": "2024-01-08T09:15:00Z",
+      "discover_user_id": 5,
+      "status": 2,
+      "remark": null,
+      "created_at": "2024-01-08T09:15:00Z",
+      "updated_at": "2024-01-14T16:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

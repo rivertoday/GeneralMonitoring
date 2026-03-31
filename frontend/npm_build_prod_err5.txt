@@ -1,0 +1,67 @@
+~/jeremy/riskmon/frontend/screen$ npm run build:prod
+
+> screen@0.0.0 build:prod
+> vue-tsc -b && vite build --mode prod
+
+src/components/map/OpenLayersLayer.vue:183:33 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+183               features.forEach((feature, index) => {
+                                    ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:183:42 - error TS7006: Parameter 'index' implicitly has an 'any' type.
+
+183               features.forEach((feature, index) => {
+                                             ~~~~~
+
+src/components/map/OpenLayersLayer.vue:243:8 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+243       (feature) => {
+           ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:312:8 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+312       (feature) => {
+           ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:842:43 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+842   const markerFeatures = features.filter((feature) => feature.get('type') === 'marker')
+                                              ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:844:27 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+844   markerFeatures.forEach((feature) => {
+                              ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:881:48 - error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+881         const markerFeatures = features.filter(f => f.get('type') === 'marker')
+                                                   ~
+
+src/components/map/OpenLayersLayer.vue:890:33 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+890         markerFeatures.forEach((feature, index) => {
+                                    ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:890:42 - error TS7006: Parameter 'index' implicitly has an 'any' type.
+
+890         markerFeatures.forEach((feature, index) => {
+                                             ~~~~~
+
+src/components/map/OpenLayersLayer.vue:917:21 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+917   features.forEach((feature) => {
+                        ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:1021:55 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+1021     olMapInstance.value.forEachFeatureAtPixel(pixel, (feature) => {
+                                                           ~~~~~~~
+
+vite.config.ts:27:29 - error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+
+27             if (import.meta.env.DEV) {
+                               ~~~
+
+
+Found 12 errors.

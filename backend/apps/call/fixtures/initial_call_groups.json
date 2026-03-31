@@ -1,0 +1,54 @@
+[
+  {
+    "model": "call.callgroup",
+    "pk": 1,
+    "fields": {
+      "group_code": "GRP001",
+      "group_name": "红色I级应急响应组",
+      "group_type": 2,
+      "event_level": 1,
+      "description": "负责红色I级应急事件的叫应响应",
+      "status": 1,
+      "sort_order": 1,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.callgroup",
+    "pk": 2,
+    "fields": {
+      "group_code": "GRP002",
+      "group_name": "橙色Ⅱ级应急响应组",
+      "group_type": 2,
+      "event_level": 2,
+      "description": "负责橙色Ⅱ级应急事件的叫应响应",
+      "status": 1,
+      "sort_order": 2,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.callgroup",
+    "pk": 3,
+    "fields": {
+      "group_code": "GRP003",
+      "group_name": "日常政策传达组",
+      "group_type": 1,
+      "event_level": null,
+      "description": "负责日常政策文件的传达和叫应",
+      "status": 1,
+      "sort_order": 3,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

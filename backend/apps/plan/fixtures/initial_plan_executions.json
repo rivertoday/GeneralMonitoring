@@ -1,0 +1,72 @@
+[
+  {
+    "model": "plan.planexecution",
+    "pk": 1,
+    "fields": {
+      "execution_code": "EXEC001",
+      "plan_id": 1,
+      "warning_id": 1,
+      "execution_type": 2,
+      "execution_status": 1,
+      "start_time": "2024-01-15T10:35:00Z",
+      "end_time": null,
+      "duration": null,
+      "command_user_id": 1,
+      "current_flow_id": 2,
+      "execution_result": null,
+      "execution_summary": null,
+      "description": "因马钢焦化厂有毒气体浓度超标，启动危化品事故应急预案",
+      "remark": null,
+      "created_at": "2024-01-15T10:35:00Z",
+      "updated_at": "2024-01-15T10:35:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planexecution",
+    "pk": 2,
+    "fields": {
+      "execution_code": "EXEC002",
+      "plan_id": 2,
+      "warning_id": 2,
+      "execution_type": 2,
+      "execution_status": 2,
+      "start_time": "2024-01-15T09:05:00Z",
+      "end_time": "2024-01-15T12:00:00Z",
+      "duration": 175,
+      "command_user_id": 1,
+      "current_flow_id": null,
+      "execution_result": "汛情已得到有效控制，水位回落至安全范围，应急响应结束",
+      "execution_summary": "本次防汛应急响应共出动人员50余人，加固堤防200米，转移群众20人，汛情得到有效控制。",
+      "description": "因长江水位超警戒，启动防汛应急预案",
+      "remark": null,
+      "created_at": "2024-01-15T09:05:00Z",
+      "updated_at": "2024-01-15T12:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.planexecution",
+    "pk": 3,
+    "fields": {
+      "execution_code": "EXEC003",
+      "plan_id": 3,
+      "warning_id": null,
+      "execution_type": 1,
+      "execution_status": 2,
+      "start_time": "2024-01-12T09:00:00Z",
+      "end_time": "2024-01-12T11:30:00Z",
+      "duration": 150,
+      "command_user_id": 2,
+      "current_flow_id": null,
+      "execution_result": "演练圆满完成，各参演人员熟悉了现场处置流程",
+      "execution_summary": "本次演练模拟危化品泄漏事故，检验了现场处置方案的可操作性，达到了预期目标。",
+      "description": "马钢焦化厂危化品泄漏现场处置演练",
+      "remark": null,
+      "created_at": "2024-01-12T09:00:00Z",
+      "updated_at": "2024-01-12T11:30:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

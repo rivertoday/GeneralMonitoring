@@ -1,0 +1,144 @@
+/**
+ * 大屏专用样式
+ */
+
+@use './variables.scss' as *;
+@use './mixins.scss' as *;
+
+// 全局样式重置
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $bg-primary;
+  color: $text-primary;
+  
+  // 滚动条样式
+  @include scrollbar;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+// 基础布局容器
+.screen-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: $bg-primary;
+  position: relative;
+}
+
+// 屏幕头部
+.screen-header {
+  width: 100%;
+  height: 8vh;
+  min-height: 60px;
+  padding: 0 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(20, 27, 45, 0.9) 0%, rgba(10, 14, 39, 0.5) 100%);
+  border-bottom: 1px solid $border-color;
+  position: relative;
+  z-index: 100;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, $color-primary, transparent);
+  }
+}
+
+.screen-title {
+  @include title(1);
+  @include gradient-text;
+  text-shadow: 0 0 20px rgba(64, 158, 255, 0.5);
+}
+
+.screen-time {
+  @include font-size($font-size-base);
+  color: $text-secondary;
+  font-family: 'Courier New', monospace;
+}
+
+// 屏幕内容区
+.screen-content {
+  width: 100%;
+  height: calc(100vh - 8vh);
+  overflow: hidden;
+  position: relative;
+}
+
+// 网格布局容器
+.screen-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 1vh;
+  padding: 1vh;
+}
+
+// 卡片容器
+.screen-card {
+  @include card;
+  padding: 1.5vh;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, $color-primary, transparent);
+  }
+}
+
+.screen-card-title {
+  @include title(3);
+  margin-bottom: 1vh;
+  padding-bottom: 0.5vh;
+  border-bottom: 1px solid $border-color;
+}
+
+// 返回按钮
+.screen-back-btn {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  padding: 1vh 2vw;
+  background: rgba(64, 158, 255, 0.1);
+  border: 1px solid $border-color;
+  border-radius: $radius-md;
+  color: $text-primary;
+  cursor: pointer;
+  transition: all $transition-base;
+  z-index: 101;
+
+  &:hover {
+    background: rgba(64, 158, 255, 0.2);
+    border-color: $border-color-active;
+    @include glow;
+  }
+}
+

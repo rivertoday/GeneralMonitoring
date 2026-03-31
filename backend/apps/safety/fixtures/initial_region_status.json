@@ -1,0 +1,136 @@
+[
+  {
+    "model": "safety.regionstatus",
+    "pk": 1,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "street": "马钢工业园区风险区域",
+      "alarm_count": 5,
+      "warning_count": 12,
+      "risk_count": 8,
+      "risk_level_1_count": 2,
+      "risk_level_2_count": 3,
+      "risk_level_3_count": 2,
+      "risk_level_4_count": 1,
+      "risk_color": "red",
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "safety.regionstatus",
+    "pk": 2,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "street": "雨山湖周边风险区域",
+      "alarm_count": 3,
+      "warning_count": 8,
+      "risk_count": 5,
+      "risk_level_1_count": 0,
+      "risk_level_2_count": 2,
+      "risk_level_3_count": 2,
+      "risk_level_4_count": 1,
+      "risk_color": "orange",
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "safety.regionstatus",
+    "pk": 3,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "street": "市中心商业区风险区域",
+      "alarm_count": 2,
+      "warning_count": 5,
+      "risk_count": 3,
+      "risk_level_1_count": 0,
+      "risk_level_2_count": 0,
+      "risk_level_3_count": 2,
+      "risk_level_4_count": 1,
+      "risk_color": "yellow",
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "safety.regionstatus",
+    "pk": 4,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "street": "东部新区风险区域",
+      "alarm_count": 1,
+      "warning_count": 2,
+      "risk_count": 1,
+      "risk_level_1_count": 0,
+      "risk_level_2_count": 0,
+      "risk_level_3_count": 0,
+      "risk_level_4_count": 1,
+      "risk_color": "blue",
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "safety.regionstatus",
+    "pk": 5,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "street": "长江沿岸风险区域",
+      "alarm_count": 2,
+      "warning_count": 4,
+      "risk_count": 2,
+      "risk_level_1_count": 0,
+      "risk_level_2_count": 1,
+      "risk_level_3_count": 1,
+      "risk_level_4_count": 0,
+      "risk_color": "yellow",
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "safety.regionstatus",
+    "pk": 6,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "street": "南部山区风险区域",
+      "alarm_count": 1,
+      "warning_count": 3,
+      "risk_count": 2,
+      "risk_level_1_count": 0,
+      "risk_level_2_count": 0,
+      "risk_level_3_count": 1,
+      "risk_level_4_count": 1,
+      "risk_color": "blue",
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "safety.regionstatus",
+    "pk": 7,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "street": "西部工业区风险区域",
+      "alarm_count": 1,
+      "warning_count": 2,
+      "risk_count": 1,
+      "risk_level_1_count": 0,
+      "risk_level_2_count": 0,
+      "risk_level_3_count": 0,
+      "risk_level_4_count": 1,
+      "risk_color": "blue",
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  }
+]
+

@@ -1,0 +1,288 @@
+[
+  {
+    "model": "system.messagetemplate",
+    "pk": 1,
+    "fields": {
+      "template_code": "MT001",
+      "template_name": "风险预警通知（系统消息）",
+      "template_type": 1,
+      "message_type": 1,
+      "subject": null,
+      "content": "【风险预警通知】\n预警标题：{warning_title}\n预警级别：{warning_level}\n预警时间：{warning_time}\n预警位置：{warning_location}\n预警内容：{warning_content}\n请相关单位及时响应处理。",
+      "variables": "{\"warning_title\": \"预警标题\", \"warning_level\": \"预警级别\", \"warning_time\": \"预警时间\", \"warning_location\": \"预警位置\", \"warning_content\": \"预警内容\"}",
+      "status": 1,
+      "description": "风险预警系统消息通知模板",
+      "remark": "用于系统内消息通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 2,
+    "fields": {
+      "template_code": "MT002",
+      "template_name": "风险预警通知（短信）",
+      "template_type": 2,
+      "message_type": 1,
+      "subject": null,
+      "content": "【风险监测预警系统】{warning_level}预警：{warning_title}，时间：{warning_time}，位置：{warning_location}。请及时响应处理。",
+      "variables": "{\"warning_level\": \"预警级别\", \"warning_title\": \"预警标题\", \"warning_time\": \"预警时间\", \"warning_location\": \"预警位置\"}",
+      "status": 1,
+      "description": "风险预警短信通知模板",
+      "remark": "用于短信推送",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 3,
+    "fields": {
+      "template_code": "MT003",
+      "template_name": "风险预警通知（邮件）",
+      "template_type": 3,
+      "message_type": 1,
+      "subject": "【风险预警通知】{warning_level} - {warning_title}",
+      "content": "<html><body><h2>风险预警通知</h2><p><strong>预警标题：</strong>{warning_title}</p><p><strong>预警级别：</strong>{warning_level}</p><p><strong>预警时间：</strong>{warning_time}</p><p><strong>预警位置：</strong>{warning_location}</p><p><strong>预警内容：</strong></p><p>{warning_content}</p><p>请相关单位及时响应处理。</p></body></html>",
+      "variables": "{\"warning_title\": \"预警标题\", \"warning_level\": \"预警级别\", \"warning_time\": \"预警时间\", \"warning_location\": \"预警位置\", \"warning_content\": \"预警内容\"}",
+      "status": 1,
+      "description": "风险预警邮件通知模板",
+      "remark": "用于邮件推送",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 4,
+    "fields": {
+      "template_code": "MT004",
+      "template_name": "报警通知（系统消息）",
+      "template_type": 1,
+      "message_type": 2,
+      "subject": null,
+      "content": "【报警通知】\n报警编号：{alarm_code}\n报警时间：{alarm_time}\n报警类型：{alarm_type}\n报警位置：{alarm_location}\n报警内容：{alarm_content}\n请及时处理。",
+      "variables": "{\"alarm_code\": \"报警编号\", \"alarm_time\": \"报警时间\", \"alarm_type\": \"报警类型\", \"alarm_location\": \"报警位置\", \"alarm_content\": \"报警内容\"}",
+      "status": 1,
+      "description": "报警系统消息通知模板",
+      "remark": "用于报警系统消息通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 5,
+    "fields": {
+      "template_code": "MT005",
+      "template_name": "报警通知（短信）",
+      "template_type": 2,
+      "message_type": 2,
+      "subject": null,
+      "content": "【风险监测预警系统】报警通知：{alarm_type}，时间：{alarm_time}，位置：{alarm_location}。请及时处理。",
+      "variables": "{\"alarm_type\": \"报警类型\", \"alarm_time\": \"报警时间\", \"alarm_location\": \"报警位置\"}",
+      "status": 1,
+      "description": "报警短信通知模板",
+      "remark": "用于报警短信推送",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 6,
+    "fields": {
+      "template_code": "MT006",
+      "template_name": "简报推送通知（系统消息）",
+      "template_type": 1,
+      "message_type": 3,
+      "subject": null,
+      "content": "【简报推送】\n简报标题：{brief_title}\n简报类型：{brief_type}\n生成时间：{brief_time}\n简报摘要：{brief_summary}\n请查看详细信息。",
+      "variables": "{\"brief_title\": \"简报标题\", \"brief_type\": \"简报类型\", \"brief_time\": \"生成时间\", \"brief_summary\": \"简报摘要\"}",
+      "status": 1,
+      "description": "简报推送系统消息模板",
+      "remark": "用于简报推送系统消息通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 7,
+    "fields": {
+      "template_code": "MT007",
+      "template_name": "简报推送通知（邮件）",
+      "template_type": 3,
+      "message_type": 3,
+      "subject": "【简报推送】{brief_title}",
+      "content": "<html><body><h2>简报推送通知</h2><p><strong>简报标题：</strong>{brief_title}</p><p><strong>简报类型：</strong>{brief_type}</p><p><strong>生成时间：</strong>{brief_time}</p><p><strong>简报摘要：</strong></p><p>{brief_summary}</p><p>请查看详细信息。</p></body></html>",
+      "variables": "{\"brief_title\": \"简报标题\", \"brief_type\": \"简报类型\", \"brief_time\": \"生成时间\", \"brief_summary\": \"简报摘要\"}",
+      "status": 1,
+      "description": "简报推送邮件通知模板",
+      "remark": "用于简报推送邮件通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 8,
+    "fields": {
+      "template_code": "MT008",
+      "template_name": "叫应通知（系统消息）",
+      "template_type": 1,
+      "message_type": 4,
+      "subject": null,
+      "content": "【叫应通知】\n叫应类型：{call_type}\n叫应时间：{call_time}\n叫应内容：{call_content}\n请及时响应。",
+      "variables": "{\"call_type\": \"叫应类型\", \"call_time\": \"叫应时间\", \"call_content\": \"叫应内容\"}",
+      "status": 1,
+      "description": "叫应系统消息通知模板",
+      "remark": "用于叫应系统消息通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 9,
+    "fields": {
+      "template_code": "MT009",
+      "template_name": "叫应通知（短信）",
+      "template_type": 2,
+      "message_type": 4,
+      "subject": null,
+      "content": "【风险监测预警系统】叫应通知：{call_type}，时间：{call_time}，内容：{call_content}。请及时响应。",
+      "variables": "{\"call_type\": \"叫应类型\", \"call_time\": \"叫应时间\", \"call_content\": \"叫应内容\"}",
+      "status": 1,
+      "description": "叫应短信通知模板",
+      "remark": "用于叫应短信推送",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 10,
+    "fields": {
+      "template_code": "MT010",
+      "template_name": "政策下发通知（系统消息）",
+      "template_type": 1,
+      "message_type": 5,
+      "subject": null,
+      "content": "【政策下发通知】\n文件名称：{policy_name}\n下发时间：{distribute_time}\n接收单位：{receive_org}\n请及时查收并反馈。",
+      "variables": "{\"policy_name\": \"文件名称\", \"distribute_time\": \"下发时间\", \"receive_org\": \"接收单位\"}",
+      "status": 1,
+      "description": "政策下发系统消息通知模板",
+      "remark": "用于政策下发系统消息通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 11,
+    "fields": {
+      "template_code": "MT011",
+      "template_name": "政策下发通知（邮件）",
+      "template_type": 3,
+      "message_type": 5,
+      "subject": "【政策下发通知】{policy_name}",
+      "content": "<html><body><h2>政策下发通知</h2><p><strong>文件名称：</strong>{policy_name}</p><p><strong>下发时间：</strong>{distribute_time}</p><p><strong>接收单位：</strong>{receive_org}</p><p>请及时查收并反馈。</p></body></html>",
+      "variables": "{\"policy_name\": \"文件名称\", \"distribute_time\": \"下发时间\", \"receive_org\": \"接收单位\"}",
+      "status": 1,
+      "description": "政策下发邮件通知模板",
+      "remark": "用于政策下发邮件通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 12,
+    "fields": {
+      "template_code": "MT012",
+      "template_name": "预警发布通知（短信）",
+      "template_type": 2,
+      "message_type": 1,
+      "subject": null,
+      "content": "【紧急预警】{warning_level}预警已发布：{warning_title}。时间：{warning_time}，位置：{warning_location}。请立即响应！",
+      "variables": "{\"warning_level\": \"预警级别\", \"warning_title\": \"预警标题\", \"warning_time\": \"预警时间\", \"warning_location\": \"预警位置\"}",
+      "status": 1,
+      "description": "紧急预警短信通知模板",
+      "remark": "用于紧急预警短信推送",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 13,
+    "fields": {
+      "template_code": "MT013",
+      "template_name": "隐患整改通知（系统消息）",
+      "template_type": 1,
+      "message_type": 5,
+      "subject": null,
+      "content": "【隐患整改通知】\n隐患编号：{danger_code}\n隐患位置：{danger_location}\n整改要求：{rectification_requirement}\n整改期限：{deadline}\n请按时完成整改。",
+      "variables": "{\"danger_code\": \"隐患编号\", \"danger_location\": \"隐患位置\", \"rectification_requirement\": \"整改要求\", \"deadline\": \"整改期限\"}",
+      "status": 1,
+      "description": "隐患整改系统消息通知模板",
+      "remark": "用于隐患整改通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 14,
+    "fields": {
+      "template_code": "MT014",
+      "template_name": "演练开始通知（系统消息）",
+      "template_type": 1,
+      "message_type": 5,
+      "subject": null,
+      "content": "【演练通知】\n演练名称：{drill_name}\n演练时间：{drill_time}\n演练地点：{drill_location}\n请相关人员准时参加。",
+      "variables": "{\"drill_name\": \"演练名称\", \"drill_time\": \"演练时间\", \"drill_location\": \"演练地点\"}",
+      "status": 1,
+      "description": "演练开始系统消息通知模板",
+      "remark": "用于演练通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "system.messagetemplate",
+    "pk": 15,
+    "fields": {
+      "template_code": "MT015",
+      "template_name": "预案启动通知（系统消息）",
+      "template_type": 1,
+      "message_type": 5,
+      "subject": null,
+      "content": "【预案启动通知】\n预案名称：{plan_name}\n启动时间：{start_time}\n启动原因：{start_reason}\n请相关单位按照预案执行。",
+      "variables": "{\"plan_name\": \"预案名称\", \"start_time\": \"启动时间\", \"start_reason\": \"启动原因\"}",
+      "status": 1,
+      "description": "预案启动系统消息通知模板",
+      "remark": "用于预案启动通知",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

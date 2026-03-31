@@ -1,0 +1,87 @@
+[
+  {
+    "model": "plan.emergencyplan",
+    "pk": 1,
+    "fields": {
+      "plan_code": "PLAN001",
+      "plan_name": "马鞍山市危险化学品事故应急预案",
+      "plan_type": 1,
+      "industry_type": 4,
+      "organization_id": 1,
+      "version": "1.0",
+      "plan_file_path": "/uploads/plans/PLAN001_v1.0.pdf",
+      "plan_file_name": "马鞍山市危险化学品事故应急预案_v1.0.pdf",
+      "plan_summary": "本预案适用于马鞍山市行政区域内发生的危险化学品事故应急处置工作，包括危化品泄漏、火灾、爆炸等突发事件的应急响应和处置。",
+      "plan_status": 1,
+      "publish_time": "2024-01-05T08:00:00Z",
+      "effective_time": "2024-01-05T08:00:00Z",
+      "expire_time": null,
+      "revision_reason": null,
+      "create_user_id": 1,
+      "approve_user_id": 1,
+      "approve_time": "2024-01-04T16:00:00Z",
+      "description": "市级危险化学品事故综合应急预案",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-05T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.emergencyplan",
+    "pk": 2,
+    "fields": {
+      "plan_code": "PLAN002",
+      "plan_name": "马鞍山市防汛应急预案",
+      "plan_type": 1,
+      "industry_type": 2,
+      "organization_id": 1,
+      "version": "1.0",
+      "plan_file_path": "/uploads/plans/PLAN002_v1.0.pdf",
+      "plan_file_name": "马鞍山市防汛应急预案_v1.0.pdf",
+      "plan_summary": "本预案适用于马鞍山市行政区域内发生的洪水、内涝等汛情应急处置工作，包括汛情监测、预警发布、应急响应、抢险救援等工作。",
+      "plan_status": 1,
+      "publish_time": "2024-01-05T08:00:00Z",
+      "effective_time": "2024-01-05T08:00:00Z",
+      "expire_time": null,
+      "revision_reason": null,
+      "create_user_id": 1,
+      "approve_user_id": 1,
+      "approve_time": "2024-01-04T16:00:00Z",
+      "description": "市级防汛综合应急预案",
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-05T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "plan.emergencyplan",
+    "pk": 3,
+    "fields": {
+      "plan_code": "PLAN003",
+      "plan_name": "马钢焦化厂危化品泄漏现场处置方案",
+      "plan_type": 3,
+      "industry_type": 4,
+      "organization_id": 8,
+      "version": "1.0",
+      "plan_file_path": "/uploads/plans/PLAN003_v1.0.pdf",
+      "plan_file_name": "马钢焦化厂危化品泄漏现场处置方案_v1.0.pdf",
+      "plan_summary": "本方案适用于马钢焦化厂生产区域发生的危化品泄漏事故现场应急处置，包括人员疏散、泄漏源控制、污染物处置等工作。",
+      "plan_status": 1,
+      "publish_time": "2024-01-10T08:00:00Z",
+      "effective_time": "2024-01-10T08:00:00Z",
+      "expire_time": null,
+      "revision_reason": null,
+      "create_user_id": 2,
+      "approve_user_id": 1,
+      "approve_time": "2024-01-09T16:00:00Z",
+      "description": "企业现场处置方案",
+      "remark": null,
+      "created_at": "2024-01-08T08:00:00Z",
+      "updated_at": "2024-01-10T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

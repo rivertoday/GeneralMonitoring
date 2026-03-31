@@ -1,0 +1,223 @@
+~/jeremy/riskmon/frontend/admin$ npm run build:prod
+
+> admin@0.0.0 build:prod
+> vue-tsc -b && vite build --mode prod
+
+src/api/request.ts:72:10 - error TS2352: Conversion of type 'Promise<AxiosResponse<PaginatedResponse<T>, any, {}>>' to type 'Promise<PaginatedResponse<T>>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'AxiosResponse<PaginatedResponse<T>, any, {}>' is missing the following properties from type 'PaginatedResponse<T>': count, next, previous, results
+
+72   return service.get<PaginatedResponse<T>>(url, { params, ...config }) as Promise<PaginatedResponse<T>>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/api/request.ts:88:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+88   return service.post<T>(url, formData, {
+     ~~~~~~
+
+src/api/request.ts:109:11 - error TS2345: Argument of type '(blob: Blob) => void' is not assignable to parameter of type '(value: AxiosResponse<Blob, any, {}>) => void | PromiseLike<void>'.
+  Types of parameters 'blob' and 'value' are incompatible.
+    Type 'AxiosResponse<Blob, any, {}>' is missing the following properties from type 'Blob': size, type, arrayBuffer, bytes, and 3 more.
+
+109     .then((blob: Blob) => {
+              ~~~~~~~~~~~~~~~~~
+
+src/types/modules/system.ts:50:18 - error TS2430: Interface 'UserDetail' incorrectly extends interface 'User'.
+  Types of property 'organization' are incompatible.
+    Type 'Organization | null | undefined' is not assignable to type 'number | null | undefined'.
+      Type 'Organization' is not assignable to type 'number'.
+
+50 export interface UserDetail extends User {
+                    ~~~~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:372:11 - error TS2322: Type 'DrillAnalysis | null | undefined' is not assignable to type 'DrillAnalysis | { id: number; stat_date: string; stat_type: StatType; stat_type_display?: string | undefined; organization_id?: number | null | undefined; ... 13 more ...; updated_at: string; } | null'.
+  Type 'undefined' is not assignable to type 'DrillAnalysis | { id: number; stat_date: string; stat_type: StatType; stat_type_display?: string | undefined; organization_id?: number | null | undefined; ... 13 more ...; updated_at: string; } | null'.
+
+372           eventAnalysis.value = analysisResponse.length > 0 ? analysisResponse[0] : null
+              ~~~~~~~~~~~~~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:374:50 - error TS2339: Property 'results' does not exist on type 'never'.
+
+374           eventAnalysis.value = analysisResponse.results?.length > 0 ? analysisResponse.results[0] : null
+                                                     ~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:374:89 - error TS2339: Property 'results' does not exist on type 'never'.
+
+374           eventAnalysis.value = analysisResponse.results?.length > 0 ? analysisResponse.results[0] : null
+                                                                                            ~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:442:34 - error TS2339: Property 'results' does not exist on type 'never'.
+
+442       tableData.value = response.results || []
+                                     ~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:443:35 - error TS2339: Property 'count' does not exist on type 'never'.
+
+443       pagination.total = response.count || response.results?.length || 0
+                                      ~~~~~
+
+src/views/drill/analysis/Analysis.vue:443:53 - error TS2339: Property 'results' does not exist on type 'never'.
+
+443       pagination.total = response.count || response.results?.length || 0
+                                                        ~~~~~~~
+
+src/views/drill/summary/SummaryList.vue:673:11 - error TS2322: Type 'DrillSummary | undefined' is not assignable to type 'DrillSummary | { id: number; event_id: number; event_name?: string | undefined; summary_title: string; communication_status?: StatusChoice | null | undefined; ... 24 more ...; updated_at: string; } | null'.
+  Type 'undefined' is not assignable to type 'DrillSummary | { id: number; event_id: number; event_name?: string | undefined; summary_title: string; communication_status?: StatusChoice | null | undefined; ... 24 more ...; updated_at: string; } | null'.
+
+673           eventSummary.value = summaryResponse.results[0]
+              ~~~~~~~~~~~~~~~~~~
+
+src/views/plan/flow/FlowList.vue:369:9 - error TS2322: Type 'number | null' is not assignable to type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+369         plan_id: selectedPlanId.value,
+            ~~~~~~~
+
+  src/types/modules/plan.ts:212:3
+    212   plan_id: number
+          ~~~~~~~
+    The expected type comes from property 'plan_id' which is declared here on type 'PlanFlowFormData'
+
+src/views/plan/flow/FlowList.vue:382:34 - error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+382         await planFlowApi.update(selectedPlanId.value, currentNode.value.id, data)
+                                     ~~~~~~~~~~~~~~~~~~~~
+
+src/views/plan/flow/FlowList.vue:386:34 - error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+386         await planFlowApi.create(selectedPlanId.value, data)
+                                     ~~~~~~~~~~~~~~~~~~~~
+
+src/views/plan/structure/StructureTree.vue:336:9 - error TS2322: Type 'number | null' is not assignable to type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+336         plan_id: selectedPlanId.value,
+            ~~~~~~~
+
+  src/types/modules/plan.ts:158:3
+    158   plan_id: number
+          ~~~~~~~
+    The expected type comes from property 'plan_id' which is declared here on type 'PlanStructureFormData'
+
+src/views/plan/structure/StructureTree.vue:348:39 - error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+348         await planStructureApi.update(selectedPlanId.value, currentNode.value.id, data)
+                                          ~~~~~~~~~~~~~~~~~~~~
+
+src/views/plan/structure/StructureTree.vue:352:39 - error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+352         await planStructureApi.create(selectedPlanId.value, data)
+                                          ~~~~~~~~~~~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:363:16 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+363             {{ currentRow.alarm_value }}
+                   ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:364:25 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+364             <span v-if="currentRow.monitor_detail?.monitor_unit">{{ currentRow.monitor_detail.monitor_unit }}</span>
+                            ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:364:69 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+364             <span v-if="currentRow.monitor_detail?.monitor_unit">{{ currentRow.monitor_detail.monitor_unit }}</span>
+                                                                        ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:370:16 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+370             {{ currentRow.threshold_value }}
+                   ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:371:25 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+371             <span v-if="currentRow.monitor_detail?.monitor_unit">{{ currentRow.monitor_detail.monitor_unit }}</span>
+                            ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:371:69 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+371             <span v-if="currentRow.monitor_detail?.monitor_unit">{{ currentRow.monitor_detail.monitor_unit }}</span>
+                                                                        ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:381:63 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+381           <span v-if="currentRow?.alarm_duration !== null">{{ currentRow.alarm_duration }}分钟</span>
+                                                                  ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:663:35 - error TS18047: 'currentRow.value' is possibly 'null'.
+
+663       await alarmRecordApi.handle(currentRow.value.id, {
+                                      ~~~~~~~~~~~~~~~~
+
+src/views/risk/monitor/MonitorList.vue:327:54 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+327           {{ currentRow?.monitor_value !== null ? `${currentRow.monitor_value} ${currentRow.monitor_unit || ''}` : '-' }}
+                                                         ~~~~~~~~~~
+
+src/views/risk/monitor/MonitorList.vue:327:82 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+327           {{ currentRow?.monitor_value !== null ? `${currentRow.monitor_value} ${currentRow.monitor_unit || ''}` : '-' }}
+                                                                                     ~~~~~~~~~~
+
+src/views/risk/monitor/MonitorList.vue:331:18 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+331             ? `${currentRow.threshold_min ?? '-'} ~ ${currentRow.threshold_max ?? '-'}`
+                     ~~~~~~~~~~
+
+src/views/risk/monitor/MonitorList.vue:331:55 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+331             ? `${currentRow.threshold_min ?? '-'} ~ ${currentRow.threshold_max ?? '-'}`
+                                                          ~~~~~~~~~~
+
+src/views/risk/rectification/RectificationList.vue:655:41 - error TS18047: 'currentRow.value' is possibly 'null'.
+
+655       await riskRectificationApi.verify(currentRow.value.id, {
+                                            ~~~~~~~~~~~~~~~~
+
+src/views/risk/warning/WarningList.vue:665:35 - error TS18047: 'currentRow.value' is possibly 'null'.
+
+665       await riskWarningApi.handle(currentRow.value.id, {
+                                      ~~~~~~~~~~~~~~~~
+
+src/views/system/role/RoleList.vue:219:30 - error TS18047: '__VLS_ctx.currentRole' is possibly 'null'.
+
+219           <el-input v-model="currentRole.role_name" disabled />
+                                 ~~~~~~~~~~~
+
+src/views/system/user/UserList.vue:271:38 - error TS2339: Property 'is_staff' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+271           <el-tag :type="currentRow?.is_staff ? 'success' : 'info'">
+                                         ~~~~~~~~
+
+src/views/system/user/UserList.vue:272:28 - error TS2339: Property 'is_staff' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+272             {{ currentRow?.is_staff ? '是' : '否' }}
+                               ~~~~~~~~
+
+src/views/system/user/UserList.vue:276:38 - error TS2339: Property 'is_superuser' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+276           <el-tag :type="currentRow?.is_superuser ? 'warning' : 'info'">
+                                         ~~~~~~~~~~~~
+
+src/views/system/user/UserList.vue:277:28 - error TS2339: Property 'is_superuser' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+277             {{ currentRow?.is_superuser ? '是' : '否' }}
+                               ~~~~~~~~~~~~
+
+src/views/system/user/UserList.vue:293:67 - error TS2339: Property 'remark' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+293         <el-descriptions-item label="备注" :span="2">{{ currentRow?.remark || '-' }}</el-descriptions-item>
+                                                                      ~~~~~~
+
+src/views/system/user/UserList.vue:308:30 - error TS18047: '__VLS_ctx.currentUser' is possibly 'null'.
+
+308           <el-input v-model="currentUser.username" disabled />
+                                 ~~~~~~~~~~~
+
+
+Found 38 errors.

@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "risk-monitoring-api",
+		"name": "风险监测预警系统 API",
+		"description": "风险监测预警系统 API 接口集合",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "认证接口",
+			"item": [
+				{
+					"name": "用户登录",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    var jsonData = pm.response.json();",
+									"    if (jsonData.code === 200 && jsonData.data.access_token) {",
+									"        // 保存 access_token 到环境变量",
+									"        pm.environment.set('access_token', jsonData.data.access_token);",
+									"        pm.environment.set('refresh_token', jsonData.data.refresh_token);",
+									"        console.log('Token已保存到环境变量');",
+									"    }",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"your_password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/auth/login/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login",
+								""
+							]
+						},
+						"description": "用户登录获取JWT Token\n\n**请求参数**:\n- username: 用户名\n- password: 密码\n\n**响应**:\n- access_token: 访问令牌\n- refresh_token: 刷新令牌\n- user: 用户信息"
+					},
+					"response": []
+				},
+				{
+					"name": "刷新Token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"{{refresh_token}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/auth/refresh/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"refresh",
+								""
+							]
+						},
+						"description": "使用refresh token获取新的access token"
+					},
+					"response": []
+				},
+				{
+					"name": "获取当前用户信息",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/auth/user-info/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user-info",
+								""
+							]
+						},
+						"description": "获取当前登录用户的详细信息\n\n**需要认证**: Bearer Token"
+					},
+					"response": []
+				},
+				{
+					"name": "用户登出",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"refresh\": \"{{refresh_token}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/auth/logout/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"logout",
+								""
+							]
+						},
+						"description": "用户登出，将token加入黑名单\n\n**需要认证**: Bearer Token"
+					},
+					"response": []
+				}
+			],
+			"description": "认证相关接口"
+		},
+		{
+			"name": "风险监测预警",
+			"item": [
+				{
+					"name": "获取监测点列表",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/risk/monitors/?page=1&page_size=20",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"risk",
+								"monitors",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "page_size",
+									"value": "20"
+								}
+							]
+						},
+						"description": "获取风险监测点列表\n\n**需要认证**: Bearer Token\n\n**查询参数**:\n- page: 页码\n- page_size: 每页数量\n- monitor_type: 监测类型 (1-实时监测, 2-全域监测, 3-重点监测)\n- industry_type: 行业类型 (1-森林火灾, 2-防汛, 3-交通运输, 4-危险化学品)\n- online_status: 在线状态 (0-离线, 1-在线)\n- status: 状态 (0-禁用, 1-启用)\n- search: 搜索关键词"
+					},
+					"response": []
+				}
+			],
+			"description": "风险监测预警模块接口"
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
+

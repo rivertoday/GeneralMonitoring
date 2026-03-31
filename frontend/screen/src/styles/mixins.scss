@@ -1,0 +1,134 @@
+/**
+ * 大屏样式Mixins
+ */
+
+@use 'sass:color';
+@use './variables.scss' as *;
+
+// 响应式字体大小
+@mixin font-size($size) {
+  font-size: $size;
+  @media (min-width: 2560px) {
+    font-size: calc($size * 1.33); // 2560px是1920px的1.33倍
+  }
+  @media (max-width: 1680px) {
+    font-size: calc($size * 0.875); // 1680px是1920px的0.875倍
+  }
+}
+
+// 卡片样式
+@mixin card {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $radius-md;
+  box-shadow: $shadow-md;
+  backdrop-filter: blur(10px);
+}
+
+// 卡片悬浮效果
+@mixin card-hover {
+  transition: all $transition-base;
+  &:hover {
+    border-color: $border-color-active;
+    box-shadow: $shadow-glow;
+    transform: translateY(-2px);
+  }
+}
+
+// 标题样式
+@mixin title($level: 1) {
+  color: $text-primary;
+  font-weight: bold;
+  margin: 0;
+  
+  @if $level == 1 {
+    @include font-size($font-size-3xl);
+  } @else if $level == 2 {
+    @include font-size($font-size-2xl);
+  } @else if $level == 3 {
+    @include font-size($font-size-xl);
+  } @else {
+    @include font-size($font-size-lg);
+  }
+}
+
+// 文本省略
+@mixin text-ellipsis($lines: 1) {
+  @if $lines == 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+// 渐变文字
+@mixin gradient-text($color1: $color-primary, $color2: null) {
+  @if $color2 == null {
+    $color2: color.scale($color1, $lightness: 20%);
+  }
+  background: linear-gradient(135deg, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// 发光效果
+@mixin glow($color: $color-primary, $size: 10px) {
+  box-shadow: 0 0 $size rgba($color, 0.5);
+}
+
+// Flex居中
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 绝对居中
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 滚动条样式
+@mixin scrollbar($width: 8px, $thumb-color: rgba(255, 255, 255, 0.3), $track-color: transparent) {
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $width;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: $track-color;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+    border-radius: calc($width / 2);
+    
+    &:hover {
+      background: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+// 响应式缩放
+@mixin responsive-scale {
+  $scale: 1;
+  @media (min-width: 2560px) {
+    $scale: 1.33;
+  }
+  @media (max-width: 1680px) {
+    $scale: 0.875;
+  }
+  transform: scale($scale);
+  transform-origin: top left;
+}
+

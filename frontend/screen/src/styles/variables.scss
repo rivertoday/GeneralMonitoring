@@ -1,0 +1,75 @@
+/**
+ * 大屏样式变量定义
+ */
+
+// 设计稿基准尺寸（1920x1080）
+$design-width: 1920px;
+$design-height: 1080px;
+
+// 颜色定义
+$bg-primary: #0a0e27;
+$bg-secondary: #141b2d;
+$bg-card: rgba(20, 27, 45, 0.8);
+$border-color: rgba(64, 158, 255, 0.3);
+$border-color-active: rgba(64, 158, 255, 0.6);
+
+// 文字颜色
+$text-primary: #ffffff;
+$text-secondary: #a0aec0;
+$text-muted: #718096;
+
+// 主题色
+$color-primary: #409eff;
+$color-success: #67c23a;
+$color-warning: #e6a23c;
+$color-danger: #f56c6c;
+$color-info: #909399;
+
+// 预警级别颜色
+$warning-red: #ff4d4f;
+$warning-orange: #ff7a45;
+$warning-yellow: #ffc53d;
+$warning-blue: #40a9ff;
+
+// 阴影
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.3);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.4);
+$shadow-glow: 0 0 20px rgba(64, 158, 255, 0.3);
+
+// 字体大小（使用vw单位）
+$font-size-xs: 0.625vw; // 12px @ 1920px
+$font-size-sm: 0.729vw; // 14px @ 1920px
+$font-size-base: 0.833vw; // 16px @ 1920px
+$font-size-lg: 1.042vw; // 20px @ 1920px
+$font-size-xl: 1.25vw; // 24px @ 1920px
+$font-size-2xl: 1.563vw; // 30px @ 1920px
+$font-size-3xl: 2.083vw; // 40px @ 1920px
+$font-size-4xl: 2.604vw; // 50px @ 1920px
+
+// 间距（使用vw/vh单位）
+$spacing-xs: 0.26vw; // 5px @ 1920px
+$spacing-sm: 0.52vw; // 10px @ 1920px
+$spacing-md: 1.04vw; // 20px @ 1920px
+$spacing-lg: 1.56vw; // 30px @ 1920px
+$spacing-xl: 2.08vw; // 40px @ 1920px
+
+// 圆角
+$radius-sm: 0.26vw; // 5px @ 1920px
+$radius-md: 0.52vw; // 10px @ 1920px
+$radius-lg: 0.78vw; // 15px @ 1920px
+
+// 过渡动画
+$transition-fast: 0.15s ease;
+$transition-base: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Z-index层级
+$z-index-dropdown: 1000;
+$z-index-sticky: 1020;
+$z-index-fixed: 1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal: 1050;
+$z-index-popover: 1060;
+$z-index-tooltip: 1070;
+

@@ -1,0 +1,99 @@
+[
+  {
+    "model": "call.policydistribution",
+    "pk": 1,
+    "fields": {
+      "distribution_code": "DIST001",
+      "policy_file_id": 1,
+      "target_id": 3,
+      "feedback_content": "请组织学习文件内容，并于30日内反馈企业安全管理措施落实情况",
+      "feedback_deadline": "2024-02-04T18:00:00Z",
+      "distribution_time": "2024-01-05T10:30:00Z",
+      "distribution_user_id": 1,
+      "feedback_status": 0,
+      "feedback_time": null,
+      "feedback_content_actual": null,
+      "supervise_status": 0,
+      "supervise_time": null,
+      "supervise_user_id": null,
+      "description": "向马钢焦化厂下发危化品安全管理政策文件",
+      "remark": null,
+      "created_at": "2024-01-05T10:30:00Z",
+      "updated_at": "2024-01-05T10:30:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.policydistribution",
+    "pk": 2,
+    "fields": {
+      "distribution_code": "DIST002",
+      "policy_file_id": 1,
+      "target_id": 4,
+      "feedback_content": "请组织学习文件内容，并于30日内反馈企业安全管理措施落实情况",
+      "feedback_deadline": "2024-02-04T18:00:00Z",
+      "distribution_time": "2024-01-05T10:30:00Z",
+      "distribution_user_id": 1,
+      "feedback_status": 1,
+      "feedback_time": "2024-01-25T15:00:00Z",
+      "feedback_content_actual": "已组织全体员工学习文件内容，制定了详细的安全管理措施，包括加强日常巡查、完善应急预案、配备应急物资等。",
+      "supervise_status": 0,
+      "supervise_time": null,
+      "supervise_user_id": null,
+      "description": "向中石化油库下发危化品安全管理政策文件",
+      "remark": null,
+      "created_at": "2024-01-05T10:30:00Z",
+      "updated_at": "2024-01-25T15:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.policydistribution",
+    "pk": 3,
+    "fields": {
+      "distribution_code": "DIST003",
+      "policy_file_id": 2,
+      "target_id": 1,
+      "feedback_content": "请组织学习防汛应急预案修订版，并于15日内反馈学习情况",
+      "feedback_deadline": "2024-01-25T18:00:00Z",
+      "distribution_time": "2024-01-10T10:30:00Z",
+      "distribution_user_id": 1,
+      "feedback_status": 1,
+      "feedback_time": "2024-01-20T14:00:00Z",
+      "feedback_content_actual": "已组织相关人员学习防汛应急预案修订版，对修订内容进行了深入讨论，确保汛期应急响应及时有效。",
+      "supervise_status": 0,
+      "supervise_time": null,
+      "supervise_user_id": null,
+      "description": "向雨山区应急管理局下发防汛应急预案修订版",
+      "remark": null,
+      "created_at": "2024-01-10T10:30:00Z",
+      "updated_at": "2024-01-20T14:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.policydistribution",
+    "pk": 4,
+    "fields": {
+      "distribution_code": "DIST004",
+      "policy_file_id": 2,
+      "target_id": 2,
+      "feedback_content": "请组织学习防汛应急预案修订版，并于15日内反馈学习情况",
+      "feedback_deadline": "2024-01-25T18:00:00Z",
+      "distribution_time": "2024-01-10T10:30:00Z",
+      "distribution_user_id": 1,
+      "feedback_status": 2,
+      "feedback_time": null,
+      "feedback_content_actual": null,
+      "supervise_status": 1,
+      "supervise_time": "2024-01-26T09:00:00Z",
+      "supervise_user_id": 1,
+      "description": "向花山区应急管理局下发防汛应急预案修订版",
+      "remark": null,
+      "created_at": "2024-01-10T10:30:00Z",
+      "updated_at": "2024-01-26T09:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

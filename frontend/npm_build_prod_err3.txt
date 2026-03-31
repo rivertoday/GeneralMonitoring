@@ -1,0 +1,49 @@
+~/jeremy/riskmon/frontend/admin$ npm run build:prod
+
+> admin@0.0.0 build:prod
+> vue-tsc -b && vite build --mode prod
+
+src/views/drill/analysis/Analysis.vue:372:11 - error TS2322: Type 'DrillAnalysis | null | undefined' is not assignable to type 'DrillAnalysis | { id: number; stat_date: string; stat_type: StatType; stat_type_display?: string | undefined; organization_id?: number | null | undefined; ... 13 more ...; updated_at: string; } | null'.
+  Type 'undefined' is not assignable to type 'DrillAnalysis | { id: number; stat_date: string; stat_type: StatType; stat_type_display?: string | undefined; organization_id?: number | null | undefined; ... 13 more ...; updated_at: string; } | null'.
+
+372           eventAnalysis.value = analysisResponse.length > 0 ? analysisResponse[0] : null
+              ~~~~~~~~~~~~~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:375:11 - error TS2322: Type 'DrillAnalysis | null | undefined' is not assignable to type 'DrillAnalysis | { id: number; stat_date: string; stat_type: StatType; stat_type_display?: string | undefined; organization_id?: number | null | undefined; ... 13 more ...; updated_at: string; } | null'.
+  Type 'undefined' is not assignable to type 'DrillAnalysis | { id: number; stat_date: string; stat_type: StatType; stat_type_display?: string | undefined; organization_id?: number | null | undefined; ... 13 more ...; updated_at: string; } | null'.
+
+375           eventAnalysis.value = paginatedResponse.results?.length > 0 ? paginatedResponse.results[0] : null
+              ~~~~~~~~~~~~~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:375:33 - error TS18048: 'paginatedResponse.results.length' is possibly 'undefined'.
+
+375           eventAnalysis.value = paginatedResponse.results?.length > 0 ? paginatedResponse.results[0] : null
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:375:73 - error TS18048: 'paginatedResponse.results' is possibly 'undefined'.
+
+375           eventAnalysis.value = paginatedResponse.results?.length > 0 ? paginatedResponse.results[0] : null
+                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/system/user/UserList.vue:271:38 - error TS2339: Property 'is_staff' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+271           <el-tag :type="currentRow?.is_staff ? 'success' : 'info'">
+                                         ~~~~~~~~
+
+src/views/system/user/UserList.vue:272:28 - error TS2339: Property 'is_staff' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+272             {{ currentRow?.is_staff ? '是' : '否' }}
+                               ~~~~~~~~
+
+src/views/system/user/UserList.vue:276:38 - error TS2339: Property 'is_superuser' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+276           <el-tag :type="currentRow?.is_superuser ? 'warning' : 'info'">
+                                         ~~~~~~~~~~~~
+
+src/views/system/user/UserList.vue:277:28 - error TS2339: Property 'is_superuser' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+277             {{ currentRow?.is_superuser ? '是' : '否' }}
+                               ~~~~~~~~~~~~
+
+
+Found 8 errors.

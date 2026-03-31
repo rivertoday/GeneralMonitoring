@@ -1,0 +1,81 @@
+[
+  {
+    "model": "risk.riskrectification",
+    "pk": 1,
+    "fields": {
+      "rectification_code": "RECT001",
+      "danger": 1,
+      "rectification_plan": "1. 更换老化安全防护设施\n2. 升级紧急切断装置，缩短响应时间至5秒内\n3. 加强日常检查和维护",
+      "rectification_measures": "立即组织专业技术人员对安全防护设施进行全面检查，制定详细更换计划，优先更换关键区域设施",
+      "responsible_user_id": 8,
+      "responsible_org_id": 8,
+      "plan_start_time": "2024-01-11T08:00:00Z",
+      "plan_end_time": "2024-01-25T18:00:00Z",
+      "actual_start_time": "2024-01-11T08:00:00Z",
+      "actual_end_time": null,
+      "rectification_status": 1,
+      "rectification_result": null,
+      "verification_status": 0,
+      "verification_time": null,
+      "verification_user_id": null,
+      "verification_opinion": null,
+      "remark": null,
+      "created_at": "2024-01-10T10:30:00Z",
+      "updated_at": "2024-01-11T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.riskrectification",
+    "pk": 2,
+    "fields": {
+      "rectification_code": "RECT002",
+      "danger": 2,
+      "rectification_plan": "1. 立即清理占用消防通道的堆放物\n2. 设置警示标识\n3. 建立消防通道日常巡查制度",
+      "rectification_measures": "立即组织人员清理消防通道，确保应急车辆通行畅通",
+      "responsible_user_id": 1,
+      "responsible_org_id": 1,
+      "plan_start_time": "2024-01-13T08:00:00Z",
+      "plan_end_time": "2024-01-13T18:00:00Z",
+      "actual_start_time": null,
+      "actual_end_time": null,
+      "rectification_status": 0,
+      "rectification_result": null,
+      "verification_status": 0,
+      "verification_time": null,
+      "verification_user_id": null,
+      "verification_opinion": null,
+      "remark": null,
+      "created_at": "2024-01-12T15:00:00Z",
+      "updated_at": "2024-01-12T15:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.riskrectification",
+    "pk": 3,
+    "fields": {
+      "rectification_code": "RECT003",
+      "danger": 3,
+      "rectification_plan": "1. 更换故障传感器\n2. 升级泄漏检测系统\n3. 建立定期检测维护制度",
+      "rectification_measures": "联系设备供应商，更换故障传感器，完成系统升级，确保实时监测功能正常",
+      "responsible_user_id": 1,
+      "responsible_org_id": 1,
+      "plan_start_time": "2024-01-09T08:00:00Z",
+      "plan_end_time": "2024-01-14T18:00:00Z",
+      "actual_start_time": "2024-01-09T08:00:00Z",
+      "actual_end_time": "2024-01-14T16:00:00Z",
+      "rectification_status": 2,
+      "rectification_result": "已更换所有故障传感器，系统升级完成，经测试运行正常",
+      "verification_status": 1,
+      "verification_time": "2024-01-14T17:00:00Z",
+      "verification_user_id": 6,
+      "verification_opinion": "整改措施到位，系统运行正常，验收通过",
+      "remark": null,
+      "created_at": "2024-01-08T09:45:00Z",
+      "updated_at": "2024-01-14T17:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

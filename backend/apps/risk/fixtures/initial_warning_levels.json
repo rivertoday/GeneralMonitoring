@@ -1,0 +1,79 @@
+[
+  {
+    "model": "risk.warninglevel",
+    "pk": 1,
+    "fields": {
+      "level_code": "I",
+      "level_name": "红色I级",
+      "level_color": "red",
+      "severity": 1,
+      "response_org": "市级应急管理部门、相关行业主管部门、事发地政府",
+      "response_time": 30,
+      "description": "特别严重，需要立即启动应急预案，采取紧急处置措施",
+      "status": 1,
+      "sort_order": 1,
+      "remark": "最高级别预警，涉及重大安全事故",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.warninglevel",
+    "pk": 2,
+    "fields": {
+      "level_code": "II",
+      "level_name": "橙色Ⅱ级",
+      "level_color": "orange",
+      "severity": 2,
+      "response_org": "区级应急管理部门、相关行业主管部门",
+      "response_time": 60,
+      "description": "严重，需要启动应急预案，采取相应处置措施",
+      "status": 1,
+      "sort_order": 2,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.warninglevel",
+    "pk": 3,
+    "fields": {
+      "level_code": "III",
+      "level_name": "黄色Ⅲ级",
+      "level_color": "yellow",
+      "severity": 3,
+      "response_org": "街道应急管理部门、相关企业单位",
+      "response_time": 120,
+      "description": "较重，需要加强监测，做好应急准备",
+      "status": 1,
+      "sort_order": 3,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "risk.warninglevel",
+    "pk": 4,
+    "fields": {
+      "level_code": "IV",
+      "level_name": "蓝色Ⅳ级",
+      "level_color": "blue",
+      "severity": 4,
+      "response_org": "相关企业单位、监测点",
+      "response_time": 240,
+      "description": "一般，需要关注情况变化",
+      "status": 1,
+      "sort_order": 4,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

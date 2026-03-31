@@ -1,0 +1,536 @@
+~/jeremy/riskmon/frontend/screen$ npm run build:prod
+npm error Missing script: "build:prod"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /home/ubuntu/.npm/_logs/2025-12-18T14_58_21_975Z-debug-0.log
+(base) ubuntu@ubuntu:~/jeremy/riskmon/frontend/screen$ npm run build:prod
+
+> screen@0.0.0 build:prod
+> vue-tsc -b && vite build --mode prod
+
+src/api/request.ts:17:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+17   return service.get<T>(url, { params, ...config })
+     ~~~~~~
+
+src/api/request.ts:28:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+28   return service.post<T>(url, data, config)
+     ~~~~~~
+
+src/api/request.ts:39:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+39   return service.put<T>(url, data, config)
+     ~~~~~~
+
+src/api/request.ts:50:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+50   return service.patch<T>(url, data, config)
+     ~~~~~~
+
+src/api/request.ts:60:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+60   return service.delete<T>(url, config)
+     ~~~~~~
+
+src/api/request.ts:71:3 - error TS2322: Type 'Promise<AxiosResponse<PaginatedResponse<T>, any, {}>>' is not assignable to type 'Promise<PaginatedResponse<T>>'.
+  Type 'AxiosResponse<PaginatedResponse<T>, any, {}>' is missing the following properties from type 'PaginatedResponse<T>': count, next, previous, results
+
+71   return service.get<PaginatedResponse<T>>(url, { params, ...config })
+     ~~~~~~
+
+src/components/map/AlarmRecordDetailDialog.vue:36:54 - error TS2339: Property 'monitor_unit' does not exist on type '{ id: number; monitor_code: string; monitor_name: string; monitor_type: number; monitor_type_display: string; industry_type: number; industry_type_display: string; longitude?: number | undefined; ... 4 more ...; online_status_display: string; }'.
+
+36               <span v-if="recordData.monitor_detail?.monitor_unit">{{ recordData.monitor_detail.monitor_unit }}</span>
+                                                        ~~~~~~~~~~~~
+
+src/components/map/AlarmRecordDetailDialog.vue:36:97 - error TS2339: Property 'monitor_unit' does not exist on type '{ id: number; monitor_code: string; monitor_name: string; monitor_type: number; monitor_type_display: string; industry_type: number; industry_type_display: string; longitude?: number | undefined; ... 4 more ...; online_status_display: string; }'.
+
+36               <span v-if="recordData.monitor_detail?.monitor_unit">{{ recordData.monitor_detail.monitor_unit }}</span>
+                                                                                                   ~~~~~~~~~~~~
+
+src/components/map/AlarmRecordDetailDialog.vue:43:54 - error TS2339: Property 'monitor_unit' does not exist on type '{ id: number; monitor_code: string; monitor_name: string; monitor_type: number; monitor_type_display: string; industry_type: number; industry_type_display: string; longitude?: number | undefined; ... 4 more ...; online_status_display: string; }'.
+
+43               <span v-if="recordData.monitor_detail?.monitor_unit">{{ recordData.monitor_detail.monitor_unit }}</span>
+                                                        ~~~~~~~~~~~~
+
+src/components/map/AlarmRecordDetailDialog.vue:43:97 - error TS2339: Property 'monitor_unit' does not exist on type '{ id: number; monitor_code: string; monitor_name: string; monitor_type: number; monitor_type_display: string; industry_type: number; industry_type_display: string; longitude?: number | undefined; ... 4 more ...; online_status_display: string; }'.
+
+43               <span v-if="recordData.monitor_detail?.monitor_unit">{{ recordData.monitor_detail.monitor_unit }}</span>
+                                                                                                   ~~~~~~~~~~~~
+
+src/components/map/BaiduMap.vue:7:15 - error TS2305: Module '"@/types/map"' has no exported member 'BaiduMapConfig'.
+
+7 import type { BaiduMapConfig, Point, MapEventType, MapEventCallback } from '@/types/map'
+                ~~~~~~~~~~~~~~
+
+src/components/map/MapToolbar.vue:91:41 - error TS2345: Argument of type 'string' is not assignable to parameter of type '"2D" | "3D" | "COLUMBUS_VIEW"'.
+
+91           @click="handleSceneModeChange(mode.value)"
+                                           ~~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:7:17 - error TS2307: Cannot find module 'ol/Map' or its corresponding type declarations.
+
+7 import Map from 'ol/Map'
+                  ~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:8:18 - error TS2307: Cannot find module 'ol/View' or its corresponding type declarations.
+
+8 import View from 'ol/View'
+                   ~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:9:25 - error TS2307: Cannot find module 'ol/layer/Vector' or its corresponding type declarations.
+
+9 import VectorLayer from 'ol/layer/Vector'
+                          ~~~~~~~~~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:10:26 - error TS2307: Cannot find module 'ol/source/Vector' or its corresponding type declarations.
+
+10 import VectorSource from 'ol/source/Vector'
+                            ~~~~~~~~~~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:11:21 - error TS2307: Cannot find module 'ol/Feature' or its corresponding type declarations.
+
+11 import Feature from 'ol/Feature'
+                       ~~~~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:12:21 - error TS2307: Cannot find module 'ol/geom/Point' or its corresponding type declarations.
+
+12 import OLPoint from 'ol/geom/Point'
+                       ~~~~~~~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:13:23 - error TS2307: Cannot find module 'ol/geom/Polygon' or its corresponding type declarations.
+
+13 import OLPolygon from 'ol/geom/Polygon'
+                         ~~~~~~~~~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:14:22 - error TS2307: Cannot find module 'ol/geom/Circle' or its corresponding type declarations.
+
+14 import OLCircle from 'ol/geom/Circle'
+                        ~~~~~~~~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:15:72 - error TS2307: Cannot find module 'ol/style' or its corresponding type declarations.
+
+15 import { Style, Icon, Stroke, Fill, Circle as CircleStyle, Text } from 'ol/style'
+                                                                          ~~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:174:33 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+174               features.forEach((feature, index) => {
+                                    ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:174:42 - error TS7006: Parameter 'index' implicitly has an 'any' type.
+
+174               features.forEach((feature, index) => {
+                                             ~~~~~
+
+src/components/map/OpenLayersLayer.vue:234:8 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+234       (feature) => {
+           ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:303:8 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+303       (feature) => {
+           ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:717:11 - error TS18048: 'first' is possibly 'undefined'.
+
+717       if (first[0] !== last[0] || first[1] !== last[1]) {
+              ~~~~~
+
+src/components/map/OpenLayersLayer.vue:717:24 - error TS18048: 'last' is possibly 'undefined'.
+
+717       if (first[0] !== last[0] || first[1] !== last[1]) {
+                           ~~~~
+
+src/components/map/OpenLayersLayer.vue:717:35 - error TS18048: 'first' is possibly 'undefined'.
+
+717       if (first[0] !== last[0] || first[1] !== last[1]) {
+                                      ~~~~~
+
+src/components/map/OpenLayersLayer.vue:717:48 - error TS18048: 'last' is possibly 'undefined'.
+
+717       if (first[0] !== last[0] || first[1] !== last[1]) {
+                                                   ~~~~
+
+src/components/map/OpenLayersLayer.vue:718:27 - error TS18048: 'first' is possibly 'undefined'.
+
+718         coordinates.push([first[0], first[1]])
+                              ~~~~~
+
+src/components/map/OpenLayersLayer.vue:718:37 - error TS18048: 'first' is possibly 'undefined'.
+
+718         coordinates.push([first[0], first[1]])
+                                        ~~~~~
+
+src/components/map/OpenLayersLayer.vue:815:19 - error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+815     ? `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}`
+                      ~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:815:47 - error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+815     ? `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}`
+                                                  ~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:815:75 - error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+815     ? `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}`
+                                                                              ~~~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:832:43 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+832   const markerFeatures = features.filter((feature) => feature.get('type') === 'marker')
+                                              ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:834:27 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+834   markerFeatures.forEach((feature) => {
+                              ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:871:48 - error TS7006: Parameter 'f' implicitly has an 'any' type.
+
+871         const markerFeatures = features.filter(f => f.get('type') === 'marker')
+                                                   ~
+
+src/components/map/OpenLayersLayer.vue:880:33 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+880         markerFeatures.forEach((feature, index) => {
+                                    ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:880:42 - error TS7006: Parameter 'index' implicitly has an 'any' type.
+
+880         markerFeatures.forEach((feature, index) => {
+                                             ~~~~~
+
+src/components/map/OpenLayersLayer.vue:907:21 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+907   features.forEach((feature) => {
+                        ~~~~~~~
+
+src/components/map/OpenLayersLayer.vue:1011:55 - error TS7006: Parameter 'feature' implicitly has an 'any' type.
+
+1011     olMapInstance.value.forEachFeatureAtPixel(pixel, (feature) => {
+                                                           ~~~~~~~
+
+src/components/widgets/AlarmRecordList.vue:30:67 - error TS2339: Property 'monitor_unit' does not exist on type '{ id: number; monitor_code: string; monitor_name: string; monitor_type: number; monitor_type_display: string; industry_type: number; industry_type_display: string; longitude?: number | undefined; ... 4 more ...; online_status_display: string; }'.
+
+30             <span class="value-unit" v-if="record.monitor_detail?.monitor_unit">{{ record.monitor_detail.monitor_unit }}</span>
+                                                                     ~~~~~~~~~~~~
+
+src/components/widgets/AlarmRecordList.vue:30:106 - error TS2339: Property 'monitor_unit' does not exist on type '{ id: number; monitor_code: string; monitor_name: string; monitor_type: number; monitor_type_display: string; industry_type: number; industry_type_display: string; longitude?: number | undefined; ... 4 more ...; online_status_display: string; }'.
+
+30             <span class="value-unit" v-if="record.monitor_detail?.monitor_unit">{{ record.monitor_detail.monitor_unit }}</span>
+                                                                                                            ~~~~~~~~~~~~
+
+src/components/widgets/MonitorDataPanel.vue:131:19 - error TS7053: Element implicitly has an 'any' type because expression of type 'number' can't be used to index type '{ 0: number; 1: number; 2: number; 3: number; }'.
+  No index signature with a parameter of type 'number' was found on type '{ 0: number; 1: number; 2: number; 3: number; }'.
+
+131     const count = alarmStatistics.value.byStatus[status] || 0
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/composables/useAlarmMarkers.ts:78:11 - error TS2783: 'alarm_status' is specified more than once, so this usage will be overwritten.
+
+78           alarm_status: record.alarm_status, // 保存报警状态
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useAlarmMarkers.ts:80:11
+    80           ...record,
+                 ~~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useAlarmMarkers.ts:79:11 - error TS2783: 'alarm_status_display' is specified more than once, so this usage will be overwritten.
+
+79           alarm_status_display: record.alarm_status_display, // 报警状态显示文本
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useAlarmMarkers.ts:80:11
+    80           ...record,
+                 ~~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useColorMapRegions.ts:108:20 - error TS18048: 'center' is possibly 'undefined'.
+
+108       let radius = center.radius
+                       ~~~~~~
+
+src/composables/useColorMapRegions.ts:110:18 - error TS18048: 'center' is possibly 'undefined'.
+
+110         radius = center.radius * 1.2
+                     ~~~~~~
+
+src/composables/useColorMapRegions.ts:112:18 - error TS18048: 'center' is possibly 'undefined'.
+
+112         radius = center.radius * 1.1
+                     ~~~~~~
+
+src/composables/useColorMapRegions.ts:114:18 - error TS18048: 'center' is possibly 'undefined'.
+
+114         radius = center.radius * 1.0
+                     ~~~~~~
+
+src/composables/useColorMapRegions.ts:116:18 - error TS18048: 'center' is possibly 'undefined'.
+
+116         radius = center.radius * 0.9
+                     ~~~~~~
+
+src/composables/useColorMapRegions.ts:121:16 - error TS18048: 'center' is possibly 'undefined'.
+
+121         { lng: center.lng, lat: center.lat },
+                   ~~~~~~
+
+src/composables/useColorMapRegions.ts:121:33 - error TS18048: 'center' is possibly 'undefined'.
+
+121         { lng: center.lng, lat: center.lat },
+                                    ~~~~~~
+
+src/composables/useResourceMarkers.ts:11:13 - error TS1294: This syntax is not allowed when 'erasableSyntaxOnly' is enabled.
+
+11 export enum ResourceType {
+               ~~~~~~~~~~~~
+
+src/composables/useResourceMarkers.ts:18:13 - error TS1294: This syntax is not allowed when 'erasableSyntaxOnly' is enabled.
+
+18 export enum TargetType {
+               ~~~~~~~~~~
+
+src/composables/useResourceMarkers.ts:27:13 - error TS1294: This syntax is not allowed when 'erasableSyntaxOnly' is enabled.
+
+27 export enum ShelterType {
+               ~~~~~~~~~~~
+
+src/composables/useResourceMarkers.ts:124:7 - error TS2783: 'resource_type' is specified more than once, so this usage will be overwritten.
+
+124       resource_type: resource.resource_type,
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useResourceMarkers.ts:128:7
+    128       ...resource,
+              ~~~~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useResourceMarkers.ts:125:7 - error TS2783: 'resource_type_display' is specified more than once, so this usage will be overwritten.
+
+125       resource_type_display: resource.resource_type_display,
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useResourceMarkers.ts:128:7
+    128       ...resource,
+              ~~~~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useResourceMarkers.ts:172:7 - error TS2783: 'target_type' is specified more than once, so this usage will be overwritten.
+
+172       target_type: target.target_type,
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useResourceMarkers.ts:177:7
+    177       ...target,
+              ~~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useResourceMarkers.ts:173:7 - error TS2783: 'target_type_display' is specified more than once, so this usage will be overwritten.
+
+173       target_type_display: target.target_type_display,
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useResourceMarkers.ts:177:7
+    177       ...target,
+              ~~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useResourceMarkers.ts:221:7 - error TS2783: 'shelter_type' is specified more than once, so this usage will be overwritten.
+
+221       shelter_type: shelter.shelter_type,
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useResourceMarkers.ts:225:7
+    225       ...shelter,
+              ~~~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useResourceMarkers.ts:222:7 - error TS2783: 'shelter_type_display' is specified more than once, so this usage will be overwritten.
+
+222       shelter_type_display: shelter.shelter_type_display,
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useResourceMarkers.ts:225:7
+    225       ...shelter,
+              ~~~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useWarningMarkers.ts:74:11 - error TS2783: 'warning_level_id' is specified more than once, so this usage will be overwritten.
+
+74           warning_level_id: event.warning_level_id, // 保存预警级别ID
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useWarningMarkers.ts:78:11
+    78           ...event,
+                 ~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useWarningMarkers.ts:75:11 - error TS2783: 'warning_status' is specified more than once, so this usage will be overwritten.
+
+75           warning_status: event.warning_status, // 保存预警状态
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useWarningMarkers.ts:78:11
+    78           ...event,
+                 ~~~~~~~~
+    This spread always overwrites this property.
+
+src/composables/useWarningMarkers.ts:77:11 - error TS2783: 'warning_status_display' is specified more than once, so this usage will be overwritten.
+
+77           warning_status_display: event.warning_status_display, // 预警状态显示文本
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  src/composables/useWarningMarkers.ts:78:11
+    78           ...event,
+                 ~~~~~~~~
+    This spread always overwrites this property.
+
+src/config/tianditu.ts:22:3 - error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+22   return TIANDITU_DOMAINS[index]
+     ~~~~~~
+
+src/config/tianditu.ts:28:13 - error TS1294: This syntax is not allowed when 'erasableSyntaxOnly' is enabled.
+
+28 export enum TiandituLayerType {
+               ~~~~~~~~~~~~~~~~~
+
+src/config/tianditu.ts:65:5 - error TS2353: Object literal may only specify known properties, and 'errorEvent' does not exist in type 'ConstructorOptions'.
+
+65     errorEvent: new Cesium.Event(),
+       ~~~~~~~~~~
+
+src/utils/cesium-entity.ts:21:18 - error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+21         parseInt(rgba[1]),
+                    ~~~~~~~
+
+src/utils/cesium-entity.ts:22:18 - error TS2345: Argument of type 'string | undefined' is not assignable to parameter of type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+22         parseInt(rgba[2]),
+                    ~~~~~~~
+
+src/utils/geometry.ts:59:18 - error TS18048: 'first' is possibly 'undefined'.
+
+59     if (Math.abs(first.lng - last.lng) > 1e-10 || Math.abs(first.lat - last.lat) > 1e-10) {
+                    ~~~~~
+
+src/utils/geometry.ts:59:30 - error TS18048: 'last' is possibly 'undefined'.
+
+59     if (Math.abs(first.lng - last.lng) > 1e-10 || Math.abs(first.lat - last.lat) > 1e-10) {
+                                ~~~~
+
+src/utils/geometry.ts:59:60 - error TS18048: 'first' is possibly 'undefined'.
+
+59     if (Math.abs(first.lng - last.lng) > 1e-10 || Math.abs(first.lat - last.lat) > 1e-10) {
+                                                              ~~~~~
+
+src/utils/geometry.ts:59:72 - error TS18048: 'last' is possibly 'undefined'.
+
+59     if (Math.abs(first.lng - last.lng) > 1e-10 || Math.abs(first.lat - last.lat) > 1e-10) {
+                                                                          ~~~~
+
+src/utils/geometry.ts:60:42 - error TS18048: 'first' is possibly 'undefined'.
+
+60       points[points.length - 1] = { lng: first.lng, lat: first.lat }
+                                            ~~~~~
+
+src/utils/geometry.ts:60:58 - error TS18048: 'first' is possibly 'undefined'.
+
+60       points[points.length - 1] = { lng: first.lng, lat: first.lat }
+                                                            ~~~~~
+
+src/utils/map.ts:162:36 - error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+162   if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+                                       ~~~~~~~~
+
+src/utils/map.ts:162:56 - error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+162   if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1])) {
+                                                           ~~~~~~~~
+
+src/utils/map.ts:163:14 - error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+163     return { lng: parts[0], lat: parts[1] }
+                 ~~~
+
+src/utils/map.ts:163:29 - error TS2322: Type 'number | undefined' is not assignable to type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+163     return { lng: parts[0], lat: parts[1] }
+                                ~~~
+
+src/utils/tianditu.ts:140:24 - error TS18048: 'url' is possibly 'undefined'.
+
+140       const fileName = url.split('/').pop()
+                           ~~~
+
+src/utils/tianditu.ts:155:9 - error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+
+155         script.src = url
+            ~~~~~~~~~~
+
+src/views/monitor-warn/MonitorWarn.vue:183:39 - error TS18047: '__VLS_ctx.selectedMonitor' is possibly 'null'.
+
+183       <div>选中监控: {{ selectedMonitor ? selectedMonitor.monitor_name : 'null' }}</div>
+                                          ~~~~~~~~~~~~~~~
+
+src/views/safety-status/SafetyStatus.vue:495:29 - error TS2532: Object is possibly 'undefined'.
+
+495     const selectedPolygon = pickedPolygons[0].polygon
+                                ~~~~~~~~~~~~~~~~~
+
+src/views/safety-status/SafetyStatus.vue:513:16 - error TS2532: Object is possibly 'undefined'.
+
+513     const xi = polygon[i].lng
+                   ~~~~~~~~~~
+
+src/views/safety-status/SafetyStatus.vue:514:16 - error TS2532: Object is possibly 'undefined'.
+
+514     const yi = polygon[i].lat
+                   ~~~~~~~~~~
+
+src/views/safety-status/SafetyStatus.vue:515:16 - error TS2532: Object is possibly 'undefined'.
+
+515     const xj = polygon[j].lng
+                   ~~~~~~~~~~
+
+src/views/safety-status/SafetyStatus.vue:516:16 - error TS2532: Object is possibly 'undefined'.
+
+516     const yj = polygon[j].lat
+                   ~~~~~~~~~~
+
+vite.config.ts:27:29 - error TS2339: Property 'env' does not exist on type 'ImportMeta'.
+
+27             if (import.meta.env.DEV) {
+                               ~~~
+
+
+Found 89 errors.

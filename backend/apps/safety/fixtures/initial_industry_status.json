@@ -1,0 +1,75 @@
+[
+  {
+    "model": "safety.industrystatus",
+    "pk": 1,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "industry_type": 1,
+      "alarm_count": 2,
+      "warning_count": 8,
+      "risk_count": 5,
+      "risk_level_1_count": 1,
+      "risk_level_2_count": 2,
+      "risk_level_3_count": 1,
+      "risk_level_4_count": 1,
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "safety.industrystatus",
+    "pk": 2,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "industry_type": 2,
+      "alarm_count": 3,
+      "warning_count": 10,
+      "risk_count": 6,
+      "risk_level_1_count": 1,
+      "risk_level_2_count": 2,
+      "risk_level_3_count": 2,
+      "risk_level_4_count": 1,
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "safety.industrystatus",
+    "pk": 3,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "industry_type": 3,
+      "alarm_count": 4,
+      "warning_count": 15,
+      "risk_count": 8,
+      "risk_level_1_count": 2,
+      "risk_level_2_count": 3,
+      "risk_level_3_count": 2,
+      "risk_level_4_count": 1,
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  },
+  {
+    "model": "safety.industrystatus",
+    "pk": 4,
+    "fields": {
+      "stat_date": "2024-12-22",
+      "industry_type": 4,
+      "alarm_count": 1,
+      "warning_count": 5,
+      "risk_count": 3,
+      "risk_level_1_count": 0,
+      "risk_level_2_count": 1,
+      "risk_level_3_count": 1,
+      "risk_level_4_count": 1,
+      "status_data": null,
+      "created_at": "2024-12-22T08:00:00Z",
+      "updated_at": "2024-12-22T08:00:00Z"
+    }
+  }
+]
+

@@ -1,0 +1,255 @@
+[
+  {
+    "model": "users.organization",
+    "pk": 1,
+    "fields": {
+      "org_code": "ORG001",
+      "org_name": "马鞍山市应急管理局",
+      "parent_id": 0,
+      "org_type": 1,
+      "level": 1,
+      "leader": "张局长",
+      "phone": "0555-12345678",
+      "address": "马鞍山市雨山区太白大道2000号",
+      "description": "市级应急管理部门",
+      "status": 1,
+      "sort_order": 1,
+      "remark": "市级应急管理主管部门",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 2,
+    "fields": {
+      "org_code": "ORG002",
+      "org_name": "雨山区应急管理局",
+      "parent_id": 1,
+      "org_type": 1,
+      "level": 2,
+      "leader": "李主任",
+      "phone": "0555-23456789",
+      "address": "马鞍山市雨山区雨山路1000号",
+      "description": "区级应急管理部门",
+      "status": 1,
+      "sort_order": 1,
+      "remark": "雨山区应急管理主管部门",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 3,
+    "fields": {
+      "org_code": "ORG003",
+      "org_name": "花山区应急管理局",
+      "parent_id": 1,
+      "org_type": 1,
+      "level": 2,
+      "leader": "王主任",
+      "phone": "0555-34567890",
+      "address": "马鞍山市花山区湖东路800号",
+      "description": "区级应急管理部门",
+      "status": 1,
+      "sort_order": 2,
+      "remark": "花山区应急管理主管部门",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 4,
+    "fields": {
+      "org_code": "ORG004",
+      "org_name": "佳山街道应急办",
+      "parent_id": 2,
+      "org_type": 1,
+      "level": 3,
+      "leader": "赵主任",
+      "phone": "0555-45678901",
+      "address": "马鞍山市雨山区佳山路500号",
+      "description": "街道级应急管理部门",
+      "status": 1,
+      "sort_order": 1,
+      "remark": "佳山街道应急管理办公室",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 5,
+    "fields": {
+      "org_code": "ORG005",
+      "org_name": "平湖街道应急办",
+      "parent_id": 2,
+      "org_type": 1,
+      "level": 3,
+      "leader": "钱主任",
+      "phone": "0555-56789012",
+      "address": "马鞍山市雨山区平湖路600号",
+      "description": "街道级应急管理部门",
+      "status": 1,
+      "sort_order": 2,
+      "remark": "平湖街道应急管理办公室",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 6,
+    "fields": {
+      "org_code": "ORG006",
+      "org_name": "雨山街道应急办",
+      "parent_id": 2,
+      "org_type": 1,
+      "level": 3,
+      "leader": "孙主任",
+      "phone": "0555-67890123",
+      "address": "马鞍山市雨山区雨山路700号",
+      "description": "街道级应急管理部门",
+      "status": 1,
+      "sort_order": 3,
+      "remark": "雨山街道应急管理办公室",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 7,
+    "fields": {
+      "org_code": "ORG007",
+      "org_name": "解放路街道应急办",
+      "parent_id": 3,
+      "org_type": 1,
+      "level": 3,
+      "leader": "周主任",
+      "phone": "0555-78901234",
+      "address": "马鞍山市花山区解放路400号",
+      "description": "街道级应急管理部门",
+      "status": 1,
+      "sort_order": 1,
+      "remark": "解放路街道应急管理办公室",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 8,
+    "fields": {
+      "org_code": "ORG008",
+      "org_name": "马鞍山钢铁股份有限公司",
+      "parent_id": 0,
+      "org_type": 2,
+      "level": 1,
+      "leader": "吴总",
+      "phone": "0555-89012345",
+      "address": "马鞍山市花山区九华西路8号",
+      "description": "大型钢铁企业",
+      "status": 1,
+      "sort_order": 10,
+      "remark": "重点企业单位",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 9,
+    "fields": {
+      "org_code": "ORG009",
+      "org_name": "马鞍山市人民医院",
+      "parent_id": 0,
+      "org_type": 3,
+      "level": 1,
+      "leader": "郑院长",
+      "phone": "0555-90123456",
+      "address": "马鞍山市花山区湖北路45号",
+      "description": "市级综合医院",
+      "status": 1,
+      "sort_order": 20,
+      "remark": "重点事业单位",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 10,
+    "fields": {
+      "org_code": "ORG010",
+      "org_name": "马鞍山市消防救援支队",
+      "parent_id": 0,
+      "org_type": 1,
+      "level": 1,
+      "leader": "冯支队长",
+      "phone": "0555-01234567",
+      "address": "马鞍山市雨山区湖西南路1000号",
+      "description": "市级消防救援机构",
+      "status": 1,
+      "sort_order": 5,
+      "remark": "专业救援队伍",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 11,
+    "fields": {
+      "org_code": "ORG011",
+      "org_name": "马鞍山市气象局",
+      "parent_id": 0,
+      "org_type": 1,
+      "level": 1,
+      "leader": "陈局长",
+      "phone": "0555-11234567",
+      "address": "马鞍山市雨山区印山路1500号",
+      "description": "市级气象部门",
+      "status": 1,
+      "sort_order": 6,
+      "remark": "气象监测数据提供单位",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "users.organization",
+    "pk": 12,
+    "fields": {
+      "org_code": "ORG012",
+      "org_name": "马鞍山市环保局",
+      "parent_id": 0,
+      "org_type": 1,
+      "level": 1,
+      "leader": "褚局长",
+      "phone": "0555-21234567",
+      "address": "马鞍山市雨山区太白大道3000号",
+      "description": "市级环保部门",
+      "status": 1,
+      "sort_order": 7,
+      "remark": "环境监测数据提供单位",
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

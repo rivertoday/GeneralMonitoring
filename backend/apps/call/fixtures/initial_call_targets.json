@@ -1,0 +1,108 @@
+[
+  {
+    "model": "call.calltarget",
+    "pk": 1,
+    "fields": {
+      "target_code": "TGT001",
+      "target_name": "雨山区应急管理局",
+      "target_type": 1,
+      "organization_id": 2,
+      "enterprise_name": null,
+      "enterprise_info": null,
+      "safety_person": "李四",
+      "contact_phone": "0555-2345678",
+      "contact_address": "雨山区XX路XX号",
+      "description": "雨山区应急管理部门",
+      "status": 1,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.calltarget",
+    "pk": 2,
+    "fields": {
+      "target_code": "TGT002",
+      "target_name": "花山区应急管理局",
+      "target_type": 1,
+      "organization_id": 3,
+      "enterprise_name": null,
+      "enterprise_info": null,
+      "safety_person": "王五",
+      "contact_phone": "0555-3456789",
+      "contact_address": "花山区XX路XX号",
+      "description": "花山区应急管理部门",
+      "status": 1,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.calltarget",
+    "pk": 3,
+    "fields": {
+      "target_code": "TGT003",
+      "target_name": "马钢焦化厂",
+      "target_type": 2,
+      "organization_id": 8,
+      "enterprise_name": "马钢焦化厂",
+      "enterprise_info": "主要从事焦炭生产，属于危化品企业",
+      "safety_person": "张总",
+      "contact_phone": "0555-4567890",
+      "contact_address": "马鞍山市花山区马钢工业园区",
+      "description": "危化品企业",
+      "status": 1,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.calltarget",
+    "pk": 4,
+    "fields": {
+      "target_code": "TGT004",
+      "target_name": "中石化油库",
+      "target_type": 2,
+      "organization_id": 1,
+      "enterprise_name": "中石化油库",
+      "enterprise_info": "主要从事成品油储存，属于重大危险源企业",
+      "safety_person": "李总",
+      "contact_phone": "0555-5678901",
+      "contact_address": "马鞍山市花山区中石化油库",
+      "description": "危化品企业",
+      "status": 1,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "call.calltarget",
+    "pk": 5,
+    "fields": {
+      "target_code": "TGT005",
+      "target_name": "马鞍山市第一人民医院",
+      "target_type": 3,
+      "organization_id": null,
+      "enterprise_name": null,
+      "enterprise_info": null,
+      "safety_person": "赵主任",
+      "contact_phone": "0555-6789012",
+      "contact_address": "马鞍山市雨山区XX路XX号",
+      "description": "医疗急救单位",
+      "status": 1,
+      "remark": null,
+      "created_at": "2024-01-01T08:00:00Z",
+      "updated_at": "2024-01-01T08:00:00Z",
+      "deleted_at": null
+    }
+  }
+]
+

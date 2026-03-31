@@ -1,0 +1,606 @@
+(.env) ubuntu@ubuntu:~/jeremy/riskmon/frontend/admin$ npm run build:prod
+
+> admin@0.0.0 build:prod
+> vue-tsc -b && vite build --mode prod
+
+src/api/index.ts:5:30 - error TS6196: 'AxiosRequestConfig' is declared but never used.
+
+5 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
+                               ~~~~~~~~~~~~~~~~~~
+
+src/api/modules/brief.ts:19:3 - error TS2305: Module '"@/types/modules/brief"' has no exported member 'PaginatedResponse'.
+
+19   PaginatedResponse,
+     ~~~~~~~~~~~~~~~~~
+
+src/api/modules/brief.ts:19:3 - error TS6196: 'PaginatedResponse' is declared but never used.
+
+19   PaginatedResponse,
+     ~~~~~~~~~~~~~~~~~
+
+src/api/modules/call.ts:30:3 - error TS2305: Module '"@/types/modules/call"' has no exported member 'PaginatedResponse'.
+
+30   PaginatedResponse,
+     ~~~~~~~~~~~~~~~~~
+
+src/api/modules/call.ts:30:3 - error TS6196: 'PaginatedResponse' is declared but never used.
+
+30   PaginatedResponse,
+     ~~~~~~~~~~~~~~~~~
+
+src/api/modules/plan.ts:23:3 - error TS6196: 'PaginatedResponse' is declared but never used.
+
+23   PaginatedResponse,
+     ~~~~~~~~~~~~~~~~~
+
+src/api/modules/risk.ts:22:3 - error TS2305: Module '"@/types/modules/risk"' has no exported member 'PaginatedResponse'.
+
+22   PaginatedResponse,
+     ~~~~~~~~~~~~~~~~~
+
+src/api/modules/risk.ts:22:3 - error TS6196: 'PaginatedResponse' is declared but never used.
+
+22   PaginatedResponse,
+     ~~~~~~~~~~~~~~~~~
+
+src/api/modules/safety.ts:21:3 - error TS6196: 'PaginatedResponse' is declared but never used.
+
+21   PaginatedResponse,
+     ~~~~~~~~~~~~~~~~~
+
+src/api/request.ts:7:15 - error TS6196: 'ApiResponse' is declared but never used.
+
+7 import type { ApiResponse, ListParams, PaginatedResponse } from './types'
+                ~~~~~~~~~~~
+
+src/api/request.ts:17:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+17   return service.get<T>(url, { params, ...config })
+     ~~~~~~
+
+src/api/request.ts:28:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+28   return service.post<T>(url, data, config)
+     ~~~~~~
+
+src/api/request.ts:39:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+39   return service.put<T>(url, data, config)
+     ~~~~~~
+
+src/api/request.ts:50:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+50   return service.patch<T>(url, data, config)
+     ~~~~~~
+
+src/api/request.ts:60:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+60   return service.delete<T>(url, config)
+     ~~~~~~
+
+src/api/request.ts:71:3 - error TS2322: Type 'Promise<AxiosResponse<PaginatedResponse<T>, any, {}>>' is not assignable to type 'Promise<PaginatedResponse<T>>'.
+  Type 'AxiosResponse<PaginatedResponse<T>, any, {}>' is missing the following properties from type 'PaginatedResponse<T>': count, next, previous, results
+
+71   return service.get<PaginatedResponse<T>>(url, { params, ...config })
+     ~~~~~~
+
+src/api/request.ts:87:3 - error TS2322: Type 'Promise<AxiosResponse<T, any, {}>>' is not assignable to type 'Promise<T>'.
+  Type 'AxiosResponse<T, any, {}>' is not assignable to type 'T'.
+    'T' could be instantiated with an arbitrary type which could be unrelated to 'AxiosResponse<T, any, {}>'.
+
+87   return service.post<T>(url, formData, {
+     ~~~~~~
+
+src/api/request.ts:109:54 - error TS2345: Argument of type 'AxiosResponse<Blob, any, {}>' is not assignable to parameter of type 'Blob | MediaSource'.
+
+109       const downloadUrl = window.URL.createObjectURL(blob)
+                                                         ~~~~
+
+src/directives/permission.ts:4:15 - error TS6196: 'App' is declared but never used.
+
+4 import type { App, DirectiveBinding } from 'vue'
+                ~~~
+
+src/router/guards.ts:18:32 - error TS6133: 'from' is declared but its value is never read.
+
+18   router.beforeEach(async (to, from, next) => {
+                                  ~~~~
+
+src/router/index.ts:94:18 - error TS6133: 'to' is declared but its value is never read.
+
+94   scrollBehavior(to, from, savedPosition) {
+                    ~~
+
+src/router/index.ts:94:22 - error TS6133: 'from' is declared but its value is never read.
+
+94   scrollBehavior(to, from, savedPosition) {
+                        ~~~~
+
+src/store/modules/auth.ts:7:38 - error TS6196: 'LoginResponse' is declared but never used.
+
+7 import type { UserInfo, LoginParams, LoginResponse } from '../types'
+                                       ~~~~~~~~~~~~~
+
+src/types/modules/system.ts:50:18 - error TS2430: Interface 'UserDetail' incorrectly extends interface 'User'.
+  Types of property 'organization' are incompatible.
+    Type 'Organization | null | undefined' is not assignable to type 'number | null | undefined'.
+      Type 'Organization' is not assignable to type 'number'.
+
+50 export interface UserDetail extends User {
+                    ~~~~~~~~~~
+
+src/views/brief/push/PushList.vue:333:19 - error TS6133: 'rule' is declared but its value is never read.
+
+333       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/brief/strategy/StrategyList.vue:416:25 - error TS6133: 'computed' is declared but its value is never read.
+
+416 import { ref, reactive, computed, watch, onMounted } from 'vue'
+                            ~~~~~~~~
+
+src/views/brief/template/TemplateList.vue:394:19 - error TS6133: 'rule' is declared but its value is never read.
+
+394       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/brief/template/TemplateList.vue:411:19 - error TS6133: 'rule' is declared but its value is never read.
+
+411       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/brief/template/TemplateList.vue:428:19 - error TS6133: 'rule' is declared but its value is never read.
+
+428       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/brief/template/TemplateList.vue:445:19 - error TS6133: 'rule' is declared but its value is never read.
+
+445       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/call/emergency/EmergencyCall.vue:158:3 - error TS6196: 'CallType' is declared but never used.
+
+158   CallType,
+      ~~~~~~~~
+
+src/views/call/emergency/EmergencyCall.vue:159:3 - error TS6196: 'CallChannel' is declared but never used.
+
+159   CallChannel,
+      ~~~~~~~~~~~
+
+src/views/call/emergency/EmergencyCall.vue:169:7 - error TS6133: 'loading' is declared but its value is never read.
+
+169 const loading = ref(false)
+          ~~~~~~~
+
+src/views/call/emergency/EmergencyCall.vue:199:19 - error TS6133: 'rule' is declared but its value is never read.
+
+199       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/call/emergency/EmergencyCall.vue:211:19 - error TS6133: 'rule' is declared but its value is never read.
+
+211       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/call/emergency/EmergencyCall.vue:223:19 - error TS6133: 'rule' is declared but its value is never read.
+
+223       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/call/policy/PolicyList.vue:272:92 - error TS6133: 'UploadFiles' is declared but its value is never read.
+
+272 import { ElMessage, ElMessageBox, type FormInstance, type FormRules, type UploadFile, type UploadFiles } from 'element-plus'
+                                                                                               ~~~~~~~~~~~
+
+src/views/call/record/RecordList.vue:271:3 - error TS6196: 'CallType' is declared but never used.
+
+271   CallType,
+      ~~~~~~~~
+
+src/views/call/record/RecordList.vue:272:3 - error TS6196: 'CallSource' is declared but never used.
+
+272   CallSource,
+      ~~~~~~~~~~
+
+src/views/dashboard/Dashboard.vue:571:42 - error TS6133: 'riskStatisticsApi' is declared but its value is never read.
+
+571 import { riskWarningApi, alarmRecordApi, riskStatisticsApi } from '@/api/modules/risk'
+                                             ~~~~~~~~~~~~~~~~~
+
+src/views/dashboard/Dashboard.vue:833:7 - error TS2353: Object literal may only specify known properties, and 'ordering' does not exist in type 'PlanExecutionListParams'.
+
+833       ordering: '-start_time,-created_at',
+          ~~~~~~~~
+
+src/views/dashboard/Dashboard.vue:846:7 - error TS2353: Object literal may only specify known properties, and 'ordering' does not exist in type 'DrillEventListParams'.
+
+846       ordering: '-event_time,-created_at',
+          ~~~~~~~~
+
+src/views/dashboard/Dashboard.vue:1110:11 - error TS2532: Object is possibly 'undefined'.
+
+1110           dateMap[date]++
+               ~~~~~~~~~~~~~
+
+src/views/dashboard/Dashboard.vue:1191:11 - error TS2532: Object is possibly 'undefined'.
+
+1191           dateMap[date]++
+               ~~~~~~~~~~~~~
+
+src/views/dashboard/Dashboard.vue:1270:22 - error TS18048: 'item.value' is possibly 'undefined'.
+
+1270   })).filter(item => item.value > 0)
+                          ~~~~~~~~~~
+
+src/views/dashboard/Dashboard.vue:1335:22 - error TS18048: 'item.value' is possibly 'undefined'.
+
+1335   })).filter(item => item.value > 0)
+                          ~~~~~~~~~~
+
+src/views/dashboard/Dashboard.vue:1806:27 - error TS6133: 'type' is declared but its value is never read.
+
+1806 const handleGoToScreen = (type: string) => {
+                               ~~~~
+
+src/views/drill/analysis/Analysis.vue:372:11 - error TS2322: Type 'DrillAnalysis | null | undefined' is not assignable to type 'DrillAnalysis | { id: number; stat_date: string; stat_type: StatType; stat_type_display?: string | undefined; organization_id?: number | null | undefined; ... 13 more ...; updated_at: string; } | null'.
+  Type 'undefined' is not assignable to type 'DrillAnalysis | { id: number; stat_date: string; stat_type: StatType; stat_type_display?: string | undefined; organization_id?: number | null | undefined; ... 13 more ...; updated_at: string; } | null'.
+
+372           eventAnalysis.value = analysisResponse.length > 0 ? analysisResponse[0] : null
+              ~~~~~~~~~~~~~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:374:50 - error TS2339: Property 'results' does not exist on type 'never'.
+
+374           eventAnalysis.value = analysisResponse.results?.length > 0 ? analysisResponse.results[0] : null
+                                                     ~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:374:89 - error TS2339: Property 'results' does not exist on type 'never'.
+
+374           eventAnalysis.value = analysisResponse.results?.length > 0 ? analysisResponse.results[0] : null
+                                                                                            ~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:442:34 - error TS2339: Property 'results' does not exist on type 'never'.
+
+442       tableData.value = response.results || []
+                                     ~~~~~~~
+
+src/views/drill/analysis/Analysis.vue:443:35 - error TS2339: Property 'count' does not exist on type 'never'.
+
+443       pagination.total = response.count || response.results?.length || 0
+                                      ~~~~~
+
+src/views/drill/analysis/Analysis.vue:443:53 - error TS2339: Property 'results' does not exist on type 'never'.
+
+443       pagination.total = response.count || response.results?.length || 0
+                                                        ~~~~~~~
+
+src/views/drill/evaluation/EvaluationList.vue:338:7 - error TS6133: 'authStore' is declared but its value is never read.
+
+338 const authStore = useAuthStore()
+          ~~~~~~~~~
+
+src/views/drill/evaluation/EvaluationList.vue:554:28 - error TS6133: 'eventId' is declared but its value is never read.
+
+554 const handleEventChange = (eventId: number) => {
+                               ~~~~~~~
+
+src/views/drill/summary/SummaryList.vue:557:7 - error TS6133: 'authStore' is declared but its value is never read.
+
+557 const authStore = useAuthStore()
+          ~~~~~~~~~
+
+src/views/drill/summary/SummaryList.vue:673:11 - error TS2322: Type 'DrillSummary | undefined' is not assignable to type 'DrillSummary | { id: number; event_id: number; event_name?: string | undefined; summary_title: string; communication_status?: StatusChoice | null | undefined; ... 24 more ...; updated_at: string; } | null'.
+  Type 'undefined' is not assignable to type 'DrillSummary | { id: number; event_id: number; event_name?: string | undefined; summary_title: string; communication_status?: StatusChoice | null | undefined; ... 24 more ...; updated_at: string; } | null'.
+
+673           eventSummary.value = summaryResponse.results[0]
+              ~~~~~~~~~~~~~~~~~~
+
+src/views/drill/summary/SummaryList.vue:807:28 - error TS6133: 'eventId' is declared but its value is never read.
+
+807 const handleEventChange = (eventId: number) => {
+                               ~~~~~~~
+
+src/views/plan/execution/ExecutionList.vue:331:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+331 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/plan/flow/FlowList.vue:47:31 - error TS6133: 'node' is declared but its value is never read.
+
+47         <template #default="{ node, data }">
+                                 ~~~~
+
+src/views/plan/flow/FlowList.vue:369:9 - error TS2322: Type 'number | null' is not assignable to type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+369         plan_id: selectedPlanId.value,
+            ~~~~~~~
+
+  src/types/modules/plan.ts:212:3
+    212   plan_id: number
+          ~~~~~~~
+    The expected type comes from property 'plan_id' which is declared here on type 'PlanFlowFormData'
+
+src/views/plan/flow/FlowList.vue:382:34 - error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+382         await planFlowApi.update(selectedPlanId.value, currentNode.value.id, data)
+                                     ~~~~~~~~~~~~~~~~~~~~
+
+src/views/plan/flow/FlowList.vue:386:34 - error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+386         await planFlowApi.create(selectedPlanId.value, data)
+                                     ~~~~~~~~~~~~~~~~~~~~
+
+src/views/plan/plan/PlanList.vue:357:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+357 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/plan/structure/StructureTree.vue:47:31 - error TS6133: 'node' is declared but its value is never read.
+
+47         <template #default="{ node, data }">
+                                 ~~~~
+
+src/views/plan/structure/StructureTree.vue:336:9 - error TS2322: Type 'number | null' is not assignable to type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+336         plan_id: selectedPlanId.value,
+            ~~~~~~~
+
+  src/types/modules/plan.ts:158:3
+    158   plan_id: number
+          ~~~~~~~
+    The expected type comes from property 'plan_id' which is declared here on type 'PlanStructureFormData'
+
+src/views/plan/structure/StructureTree.vue:348:39 - error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+348         await planStructureApi.update(selectedPlanId.value, currentNode.value.id, data)
+                                          ~~~~~~~~~~~~~~~~~~~~
+
+src/views/plan/structure/StructureTree.vue:352:39 - error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+
+352         await planStructureApi.create(selectedPlanId.value, data)
+                                          ~~~~~~~~~~~~~~~~~~~~
+
+src/views/plan/task/TaskList.vue:324:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+324 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:363:16 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+363             {{ currentRow.alarm_value }}
+                   ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:364:25 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+364             <span v-if="currentRow.monitor_detail?.monitor_unit">{{ currentRow.monitor_detail.monitor_unit }}</span>
+                            ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:364:69 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+364             <span v-if="currentRow.monitor_detail?.monitor_unit">{{ currentRow.monitor_detail.monitor_unit }}</span>
+                                                                        ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:370:16 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+370             {{ currentRow.threshold_value }}
+                   ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:371:25 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+371             <span v-if="currentRow.monitor_detail?.monitor_unit">{{ currentRow.monitor_detail.monitor_unit }}</span>
+                            ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:371:69 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+371             <span v-if="currentRow.monitor_detail?.monitor_unit">{{ currentRow.monitor_detail.monitor_unit }}</span>
+                                                                        ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:381:63 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+381           <span v-if="currentRow?.alarm_duration !== null">{{ currentRow.alarm_duration }}分钟</span>
+                                                                  ~~~~~~~~~~
+
+src/views/risk/alarm/AlarmList.vue:663:35 - error TS18047: 'currentRow.value' is possibly 'null'.
+
+663       await alarmRecordApi.handle(currentRow.value.id, {
+                                      ~~~~~~~~~~~~~~~~
+
+src/views/risk/monitor/MonitorList.vue:327:54 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+327           {{ currentRow?.monitor_value !== null ? `${currentRow.monitor_value} ${currentRow.monitor_unit || ''}` : '-' }}
+                                                         ~~~~~~~~~~
+
+src/views/risk/monitor/MonitorList.vue:327:82 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+327           {{ currentRow?.monitor_value !== null ? `${currentRow.monitor_value} ${currentRow.monitor_unit || ''}` : '-' }}
+                                                                                     ~~~~~~~~~~
+
+src/views/risk/monitor/MonitorList.vue:331:18 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+331             ? `${currentRow.threshold_min ?? '-'} ~ ${currentRow.threshold_max ?? '-'}`
+                     ~~~~~~~~~~
+
+src/views/risk/monitor/MonitorList.vue:331:55 - error TS18047: '__VLS_ctx.currentRow' is possibly 'null'.
+
+331             ? `${currentRow.threshold_min ?? '-'} ~ ${currentRow.threshold_max ?? '-'}`
+                                                          ~~~~~~~~~~
+
+src/views/risk/monitor/MonitorList.vue:360:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+360 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/risk/rectification/RectificationList.vue:655:41 - error TS18047: 'currentRow.value' is possibly 'null'.
+
+655       await riskRectificationApi.verify(currentRow.value.id, {
+                                            ~~~~~~~~~~~~~~~~
+
+src/views/risk/rule/RuleList.vue:424:19 - error TS6133: 'rule' is declared but its value is never read.
+
+424       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/risk/rule/RuleList.vue:441:19 - error TS6133: 'rule' is declared but its value is never read.
+
+441       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/risk/warning/WarningList.vue:402:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+402 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/risk/warning/WarningList.vue:665:35 - error TS18047: 'currentRow.value' is possibly 'null'.
+
+665       await riskWarningApi.handle(currentRow.value.id, {
+                                      ~~~~~~~~~~~~~~~~
+
+src/views/safety/hazard/HazardList.vue:357:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+357 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/safety/resource/ResourceList.vue:369:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+369 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/safety/shelter/ShelterList.vue:305:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+305 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/safety/target/TargetList.vue:322:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+322 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/safety/video/VideoList.vue:286:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+286 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/screen/ScreenOverview.vue:24:7 - error TS6133: 'router' is declared but its value is never read.
+
+24 const router = useRouter()
+         ~~~~~~
+
+src/views/system/datasource/DatasourceList.vue:416:19 - error TS6133: 'rule' is declared but its value is never read.
+
+416       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/system/datasource/DatasourceList.vue:430:19 - error TS6133: 'rule' is declared but its value is never read.
+
+430       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/system/datasource/DatasourceList.vue:444:19 - error TS6133: 'rule' is declared but its value is never read.
+
+444       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/system/datasource/DatasourceList.vue:458:19 - error TS6133: 'rule' is declared but its value is never read.
+
+458       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/system/datasource/DatasourceList.vue:472:19 - error TS6133: 'rule' is declared but its value is never read.
+
+472       validator: (rule, value, callback) => {
+                      ~~~~
+
+src/views/system/organization/OrganizationTree.vue:31:31 - error TS6133: 'node' is declared but its value is never read.
+
+31         <template #default="{ node, data }">
+                                 ~~~~
+
+src/views/system/organization/OrganizationTree.vue:200:60 - error TS6196: 'Status' is declared but never used.
+
+200 import type { Organization, OrganizationFormData, OrgType, Status } from '@/types/modules/system'
+                                                               ~~~~~~
+
+src/views/system/permission/PermissionTree.vue:31:31 - error TS6133: 'node' is declared but its value is never read.
+
+31         <template #default="{ node, data }">
+                                 ~~~~
+
+src/views/system/permission/PermissionTree.vue:218:63 - error TS6196: 'Status' is declared but never used.
+
+218 import type { Permission, PermissionFormData, PermissionType, Status } from '@/types/modules/system'
+                                                                  ~~~~~~
+
+src/views/system/role/RoleList.vue:219:30 - error TS18047: '__VLS_ctx.currentRole' is possibly 'null'.
+
+219           <el-input v-model="currentRole.role_name" disabled />
+                                 ~~~~~~~~~~~
+
+src/views/system/role/RoleList.vue:232:35 - error TS6133: 'node' is declared but its value is never read.
+
+232             <template #default="{ node, data }">
+                                      ~~~~
+
+src/views/system/role/RoleList.vue:265:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+265 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+src/views/system/user/UserList.vue:271:38 - error TS2339: Property 'is_staff' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+271           <el-tag :type="currentRow?.is_staff ? 'success' : 'info'">
+                                         ~~~~~~~~
+
+src/views/system/user/UserList.vue:272:28 - error TS2339: Property 'is_staff' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+272             {{ currentRow?.is_staff ? '是' : '否' }}
+                               ~~~~~~~~
+
+src/views/system/user/UserList.vue:276:38 - error TS2339: Property 'is_superuser' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+276           <el-tag :type="currentRow?.is_superuser ? 'warning' : 'info'">
+                                         ~~~~~~~~~~~~
+
+src/views/system/user/UserList.vue:277:28 - error TS2339: Property 'is_superuser' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+277             {{ currentRow?.is_superuser ? '是' : '否' }}
+                               ~~~~~~~~~~~~
+
+src/views/system/user/UserList.vue:293:67 - error TS2339: Property 'remark' does not exist on type '{ id: number; username: string; real_name?: string | null | undefined; email?: string | null | undefined; phone?: string | null | undefined; avatar?: string | null | undefined; gender?: Gender | undefined; ... 8 more ...; updated_at: string; }'.
+
+293         <el-descriptions-item label="备注" :span="2">{{ currentRow?.remark || '-' }}</el-descriptions-item>
+                                                                      ~~~~~~
+
+src/views/system/user/UserList.vue:308:30 - error TS18047: '__VLS_ctx.currentUser' is possibly 'null'.
+
+308           <el-input v-model="currentUser.username" disabled />
+                                 ~~~~~~~~~~~
+
+src/views/system/user/UserList.vue:341:75 - error TS6196: 'Gender' is declared but never used.
+
+341 import type { User, UserDetail, UserFormData, Organization, Role, Status, Gender } from '@/types/modules/system'
+                                                                              ~~~~~~
+
+src/views/system/user/UserList.vue:342:1 - error TS6133: 'PaginatedResponse' is declared but its value is never read.
+
+342 import type { PaginatedResponse } from '@/api/types'
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Found 113 errors.

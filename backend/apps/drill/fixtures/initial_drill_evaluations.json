@@ -1,0 +1,243 @@
+[
+  {
+    "model": "drill.drillevaluation",
+    "pk": 1,
+    "fields": {
+      "event_id": 1,
+      "node_name": "信息接报",
+      "node_type": 1,
+      "evaluation_item": "信息接报及时性",
+      "evaluation_content": "演练中信息接报及时，接报人员能够快速识别事故类型和严重程度，并及时向上级报告。接报流程规范，信息传递准确。",
+      "evaluation_score": "92.50",
+      "evaluation_level": 1,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-10-15T10:30:00Z",
+      "description": "信息接报环节评价",
+      "remark": "表现优秀",
+      "created_at": "2024-10-15T10:30:00Z",
+      "updated_at": "2024-10-15T10:30:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 2,
+    "fields": {
+      "event_id": 1,
+      "node_name": "应急响应启动",
+      "node_type": 2,
+      "evaluation_item": "应急响应启动速度",
+      "evaluation_content": "应急响应启动迅速，指挥人员能够快速做出决策，启动相应级别的应急预案。响应流程清晰，职责分工明确。",
+      "evaluation_score": "88.00",
+      "evaluation_level": 2,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-10-15T11:00:00Z",
+      "description": "应急响应启动环节评价",
+      "remark": "表现良好",
+      "created_at": "2024-10-15T11:00:00Z",
+      "updated_at": "2024-10-15T11:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 3,
+    "fields": {
+      "event_id": 1,
+      "node_name": "人员疏散",
+      "node_type": 3,
+      "evaluation_item": "人员疏散效率",
+      "evaluation_content": "人员疏散组织有序，疏散路线清晰，疏散时间符合要求。现场指挥人员能够有效引导人员撤离，疏散过程安全有序。",
+      "evaluation_score": "90.00",
+      "evaluation_level": 1,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-10-15T11:30:00Z",
+      "description": "人员疏散环节评价",
+      "remark": "表现优秀",
+      "created_at": "2024-10-15T11:30:00Z",
+      "updated_at": "2024-10-15T11:30:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 4,
+    "fields": {
+      "event_id": 1,
+      "node_name": "泄漏控制",
+      "node_type": 4,
+      "evaluation_item": "泄漏控制措施",
+      "evaluation_content": "泄漏控制措施得当，应急处置人员能够快速定位泄漏点，采取有效的控制措施。防护装备使用规范，现场处置安全有序。",
+      "evaluation_score": "85.00",
+      "evaluation_level": 2,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-10-15T12:00:00Z",
+      "description": "泄漏控制环节评价",
+      "remark": "表现良好",
+      "created_at": "2024-10-15T12:00:00Z",
+      "updated_at": "2024-10-15T12:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 5,
+    "fields": {
+      "event_id": 1,
+      "node_name": "环境监测",
+      "node_type": 5,
+      "evaluation_item": "环境监测及时性",
+      "evaluation_content": "环境监测及时启动，监测点位设置合理，监测数据准确可靠。监测人员操作规范，监测结果能够及时反馈。",
+      "evaluation_score": "87.50",
+      "evaluation_level": 2,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-10-15T12:30:00Z",
+      "description": "环境监测环节评价",
+      "remark": "表现良好",
+      "created_at": "2024-10-15T12:30:00Z",
+      "updated_at": "2024-10-15T12:30:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 6,
+    "fields": {
+      "event_id": 2,
+      "node_name": "水位监测预警",
+      "node_type": 1,
+      "evaluation_item": "水位监测预警准确性",
+      "evaluation_content": "水位监测预警及时准确，监测人员能够及时发现水位异常，预警信息发布及时。预警级别判定准确，预警范围合理。",
+      "evaluation_score": "91.00",
+      "evaluation_level": 1,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-11-05T15:00:00Z",
+      "description": "水位监测预警环节评价",
+      "remark": "表现优秀",
+      "created_at": "2024-11-05T15:00:00Z",
+      "updated_at": "2024-11-05T15:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 7,
+    "fields": {
+      "event_id": 2,
+      "node_name": "堤防巡查",
+      "node_type": 3,
+      "evaluation_item": "堤防巡查组织",
+      "evaluation_content": "堤防巡查组织有序，巡查路线清晰，巡查人员能够及时发现险情。巡查记录完整，险情报告及时。",
+      "evaluation_score": "89.00",
+      "evaluation_level": 2,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-11-05T15:30:00Z",
+      "description": "堤防巡查环节评价",
+      "remark": "表现良好",
+      "created_at": "2024-11-05T15:30:00Z",
+      "updated_at": "2024-11-05T15:30:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 8,
+    "fields": {
+      "event_id": 2,
+      "node_name": "险情处置",
+      "node_type": 4,
+      "evaluation_item": "险情处置效果",
+      "evaluation_content": "险情处置措施得当，抢险人员能够快速到达现场，采取有效的抢险措施。抢险物资准备充分，抢险过程安全有序。",
+      "evaluation_score": "86.50",
+      "evaluation_level": 2,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-11-05T16:00:00Z",
+      "description": "险情处置环节评价",
+      "remark": "表现良好",
+      "created_at": "2024-11-05T16:00:00Z",
+      "updated_at": "2024-11-05T16:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 9,
+    "fields": {
+      "event_id": 3,
+      "node_name": "火灾报警",
+      "node_type": 1,
+      "evaluation_item": "火灾报警及时性",
+      "evaluation_content": "火灾报警及时，报警人员能够快速识别火灾类型和严重程度，并及时向上级报告。报警流程规范，信息传递准确。",
+      "evaluation_score": "93.00",
+      "evaluation_level": 1,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-11-20T11:00:00Z",
+      "description": "火灾报警环节评价",
+      "remark": "表现优秀",
+      "created_at": "2024-11-20T11:00:00Z",
+      "updated_at": "2024-11-20T11:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 10,
+    "fields": {
+      "event_id": 3,
+      "node_name": "火灾扑救",
+      "node_type": 4,
+      "evaluation_item": "火灾扑救效果",
+      "evaluation_content": "火灾扑救措施得当，消防人员能够快速到达现场，采取有效的扑救措施。消防装备使用规范，扑救过程安全有序。",
+      "evaluation_score": "90.00",
+      "evaluation_level": 1,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-11-20T11:30:00Z",
+      "description": "火灾扑救环节评价",
+      "remark": "表现优秀",
+      "created_at": "2024-11-20T11:30:00Z",
+      "updated_at": "2024-11-20T11:30:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 11,
+    "fields": {
+      "event_id": 4,
+      "node_name": "事故报告",
+      "node_type": 1,
+      "evaluation_item": "事故报告及时性",
+      "evaluation_content": "事故报告及时，报告人员能够快速识别事故类型和严重程度，并及时向上级报告。报告流程规范，信息传递准确。",
+      "evaluation_score": "88.00",
+      "evaluation_level": 2,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-12-01T09:00:00Z",
+      "description": "事故报告环节评价",
+      "remark": "表现良好",
+      "created_at": "2024-12-01T09:00:00Z",
+      "updated_at": "2024-12-01T09:00:00Z",
+      "deleted_at": null
+    }
+  },
+  {
+    "model": "drill.drillevaluation",
+    "pk": 12,
+    "fields": {
+      "event_id": 4,
+      "node_name": "人员搜救",
+      "node_type": 4,
+      "evaluation_item": "人员搜救效率",
+      "evaluation_content": "人员搜救组织有序，搜救人员能够快速定位被困人员，采取有效的搜救措施。搜救装备使用规范，搜救过程安全有序。",
+      "evaluation_score": "85.00",
+      "evaluation_level": 2,
+      "evaluator_id": 3,
+      "evaluation_time": "2024-12-01T09:30:00Z",
+      "description": "人员搜救环节评价",
+      "remark": "表现良好",
+      "created_at": "2024-12-01T09:30:00Z",
+      "updated_at": "2024-12-01T09:30:00Z",
+      "deleted_at": null
+    }
+  }
+]
+
